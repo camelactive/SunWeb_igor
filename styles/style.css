@@ -82,8 +82,9 @@ ul {
 }
 
 .header_top_left_menu {
-    height: 16px;
-    width: 12px;
+    width: 24px;
+    height: 24px;
+    line-height: 16px;
 }
 
 .shimishimi {
@@ -133,16 +134,17 @@ ul {
     display: flex;
 }
 
-.bell::before {
+/*корзина с красным кружком*/
+/* .bell::before {
     content: url(/SunWeb_igor/images/Корзина.png);
-}
+} */
 
 li {
     line-height: 16px;
     padding: 0px 15px;
 }
 
-.header_bottom_container li{
+.header_bottom_container li {
     background-color: #FFFFFF;
     border-radius: 46px;
     height: 40px;
@@ -151,6 +153,7 @@ li {
     align-items: center;
     border: 1px solid #E9E6E6
 }
+
 .header_bottom_container li:hover {
     background-color: #E9E6E6;
     border-radius: 46px;
@@ -160,17 +163,45 @@ li {
     align-items: center;
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     color: #274646;
 }
+
 .header_middle_container li:hover {
     border-bottom: 3px solid #274646;
     box-sizing: border-box;
-    line-height:52px;
+    line-height: 52px;
     cursor: pointer;
 }
-.header_middle_container li{
-line-height:54px;
+
+.header_middle_container li {
+    line-height: 54px;
 }
+
+.rubble {
+    margin-left: 5px;
+}
+
+.bell_round {
+    color: #FFFFFF;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #B20D30;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+}
+
 /* Header */
