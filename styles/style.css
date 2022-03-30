@@ -44,6 +44,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 1400px;
+    font-family: 'Value Sans Pro';
 }
 
 .header_bottom_container {
@@ -151,9 +152,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #E9E6E6
+    border: 1px solid #E9E6E6;
 }
-
 .header_bottom_container li:hover {
     background-color: #E9E6E6;
     border-radius: 46px;
@@ -162,10 +162,19 @@ li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition-duration: 0.7s;
+    
 }
 
 a {
     text-decoration: none;
+    color: #274646;
+}
+.header_bottom_container li a {
+    text-decoration: none;
+    color: #6B6B6B
+}
+.header_bottom_container li a:hover{
     color: #274646;
 }
 
@@ -193,7 +202,6 @@ a {
     height: 18px;
     border-radius: 50%;
     background-color: #B20D30;
-    font-family: 'Value Sans Pro';
     font-style: normal;
     font-weight: 900;
     font-size: 12px;
