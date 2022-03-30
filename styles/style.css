@@ -216,13 +216,7 @@ a {
 /* Header */
 /* Header media*/
 
-/* @media (max-width: 576px){
-    .header_top_container,
-    .header_middle_container,
-    .header_bottom_container{
-        width: 100%;
-    }
-} */
+
 @media (max-width: 576px){
     .header_top_container,
     .header_middle_container,
