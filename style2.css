@@ -1,0 +1,150 @@
+.header {
+    width: 1920px;
+}
+
+.header_top {
+    background-color: #274646;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.header_middle,
+.header_bottom {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 1400px;
+    justify-content: space-around;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.header_top_container {
+    height: 54px;
+}
+
+.header_middle_container {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header_top_container,
+.header_middle_container,
+.header_bottom_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+}
+
+.header_bottom_container {
+    width: 30%;
+    display: flex;
+    margin-right: 40%;
+}
+
+.header_top_left {
+    width: 513px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_top_right {
+    width: 204px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shimmingi {
+    display: flex;
+    align-items: center;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFBDC8;
+}
+
+.header_top_left,
+.header_top_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_top_left_menu {
+    height: 16px;
+    width: 12px;
+}
+
+.shimishimi {
+    height: 16px;
+    width: 196px;
+}
+
+.tel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0;
+}
+
+.adress_add {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFE091;
+    align-items: center;
+    display: flex;
+}
+
+.adress_add::before {
+    content: url(/SunWeb_igor/images/location-add.png);
+    Width: 12.94px;
+    Height: 15px;
+    padding-right: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.shimmingi::before {
+    content: url(/SunWeb_igor/images/shimingi.png);
+    padding-right: 10px;
+    Width: 18px;
+    Height: 18px
+}
+
+.bell {
+    color: #FFFFFF;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    display: flex;
+}
+
+.bell::before {
+    content: url(/SunWeb_igor/images/Корзина.png);
+}
+
+li {
+    line-height: 16px;
+}
+
+li:hover {
+    background-color: #E9E6E6;
+    border-radius: 46px;
+    width: 132px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
