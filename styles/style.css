@@ -1,3 +1,4 @@
+/* //////////////////Header//////////////////////////// */
 .header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -39,6 +40,8 @@
 
 .header_top_right {
     display: flex;
+    width: 204px;
+    justify-content: space-between;
 }
 
 .shimmingi {
@@ -95,7 +98,7 @@
     Height: 18px
 }
 
-.bell {
+.summ {
     color: #FFFFFF;
     font-family: 'Value Sans Pro';
     font-style: normal;
@@ -132,7 +135,10 @@ a {
     align-items: center;
     justify-content: center;
 }
-
+.shopping_bag_and_round{
+    display: flex;
+   align-items: center;
+}
 .header_nav_top {
     border-bottom: 1px solid #E5E5E5;
     height: 54px;
@@ -152,6 +158,10 @@ a {
 a {
     text-decoration: none;
     color: #274646;
+}
+.header_top_left_menu_mobile{
+    display: flex;
+    gap: 28px;
 }
 
 .header_nav_top a:hover {
@@ -203,31 +213,24 @@ a {
 .header_top_left_hide {
     display: none;
 }
+/* ///////////////////////////////////////Header////////////////////////////////////////// */
 
+/* Media////////////////////////////////// */
 @media (max-width: 576px) {
     .shimishimi,
     .tel,
     .shimmingi,
     .bell_round,
-    .bell,
-    .shopping_bag {
+    .summ,
+    .shopping_bag,
+    .header_top_right  {
         display: none;
-    }
-    .adress_add {
-        position: absolute;
-        right: 25px;
-        top: 25px;
-    }
-    .header_top_left_menu {
-        position: absolute;
-        left: 25px;
-        top: 25px;
     }
     .header_top_left_hide {
         display: block;
-        position: absolute;
-        left: 80px;
-        top: 25px;
+    }
+    .header_top_left {
+        width: 100%;
     }
     .container {
         width: 100%;
@@ -240,29 +243,25 @@ a {
     .tel,
     .shimmingi,
     .bell_round,
-    .bell,
-    .shopping_bag {
+    .summ,
+    .shopping_bag,
+    .header_top_right {
         display: none;
     }
     .header_top_left_hide {
         display: block;
-        position: absolute;
-        left: 80px;
-        top: 25px;
+    }
+    .header_top_right{
+        display: none;
     }
     .container {
         width: 540px;
     }
-    .adress_add {
-        position: absolute;
-        right: 25px;
-        top: 25px;
+    .header_top_left {
+        display: flex;
+        width: 100%;
     }
-    .header_top_left_menu {
-        position: absolute;
-        left: 25px;
-        top: 25px;
-    }
+ 
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -291,3 +290,5 @@ a {
         width: 1320px;
     }
 }
+
+/* Media///////////////////////////////////////////////// */
