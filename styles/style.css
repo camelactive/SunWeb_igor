@@ -95,6 +95,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    padding-left: 10px;
 }
 
 .adress_add::before {
@@ -205,6 +206,8 @@ a {
     display: none;
     justify-content: flex-start;
     gap: 42px;
+    flex-direction: row;
+    width: 100%;
 }
 
 .header_nav_bottom a {
@@ -241,6 +244,9 @@ a {
 
 .header_top_left_hide {
     display: none;
+}
+.header_nav_top:hover ~.header_nav_bottom {
+    display: flex;
 }
 
 /* ///////////////////////////////////////Header////////////////////////////////////////// */
