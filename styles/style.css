@@ -3,7 +3,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
-    position: static;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .header_top {
@@ -20,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     overflow: scroll;
+    width: 100%;
 }
 
 .header_nav::-webkit-scrollbar {
@@ -30,6 +34,7 @@
     display: flex;
     font-family: 'Value Sans Pro';
     justify-content: space-between;
+    width: 100%;
 }
 
 .header_top_left {
@@ -40,8 +45,10 @@
 
 .header_top_right {
     display: flex;
-    width: 204px;
     justify-content: space-between;
+    width: 204px;
+    padding-right: 21px;
+   
 }
 
 .shimmingi {
@@ -53,7 +60,6 @@
     font-size: 14px;
     line-height: 16px;
     color: #FFBDC8;
-    margin: 0px 8px;
 }
 
 .header_top_left,
@@ -62,9 +68,9 @@
 }
 
 .header_top_left_menu {
-    width: 24px;
-    height: 24px;
-    line-height: 16px;
+    /* width: 24px;
+    height: 24px; */
+    /* line-height: 16px; */
 }
 
 .tel {
@@ -75,11 +81,14 @@
 }
 
 .adress_add {
-    font-weight: 700;
-    font-size: 14px;
     color: #FFE091;
     align-items: center;
     display: flex;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .adress_add::before {
@@ -112,6 +121,11 @@
 a {
     text-decoration: none;
     color: #274646;
+    font-family: 'Value Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
 }
 
 .rubble {
@@ -135,13 +149,15 @@ a {
     align-items: center;
     justify-content: center;
 }
-.shopping_bag_and_round{
+
+.shopping_bag_and_round {
     display: flex;
-   align-items: center;
+    align-items: center;
 }
+
 .header_nav_top {
     border-bottom: 1px solid #E5E5E5;
-    height: 54px;
+    height: 52px;
     font-family: 'Value Sans Pro';
     font-style: normal;
     font-weight: 700;
@@ -149,17 +165,24 @@ a {
     gap: 48px;
     display: flex;
     align-items: center;
+    width: 100%;
+
+
+
+    line-height: 16px;
 }
 
 .header_middle_container_item {
     white-space: nowrap;
+    
 }
 
 a {
     text-decoration: none;
     color: #274646;
 }
-.header_top_left_menu_mobile{
+
+.header_top_left_menu_mobile {
     display: flex;
     gap: 28px;
 }
@@ -213,37 +236,40 @@ a {
 .header_top_left_hide {
     display: none;
 }
+
 /* ///////////////////////////////////////Header////////////////////////////////////////// */
 
 /* Media////////////////////////////////// */
 @media (max-width: 576px) {
+
     .shimishimi,
     .tel,
     .shimmingi,
     .bell_round,
     .summ,
     .shopping_bag,
-    .header_top_right  {
+    .header_top_right {
         display: none;
     }
+
     .header_top_left_hide {
         display: block;
     }
+
     .header_top_left {
         width: 100%;
     }
+
     .container {
+        max-width: 540px;
         width: 100%;
-    }
-    .header_top_left_menu_mobile {
-        margin-left: 10px;
-    }
-    .adress_add{
-        margin-right: 10px;
+        padding: 0px .75rem;
     }
 }
 
+
 @media (min-width: 576px) and (max-width: 768px) {
+
     /* for iPhone 13 */
     .shimishimi,
     .tel,
@@ -254,46 +280,59 @@ a {
     .header_top_right {
         display: none;
     }
+
     .header_top_left_hide {
         display: block;
     }
-    .header_top_right{
+
+    .header_top_right {
         display: none;
     }
+
     .container {
         width: 540px;
     }
+
     .header_top_left {
         display: flex;
         width: 100%;
     }
- 
+
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) {
     .container {
-        width: 720px;
+        max-width: 720px;
     }
+
     .tel {
         display: none;
     }
 }
 
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 992px) {
     .container {
-        width: 960px;
+        max-width: 960px;
+    }
+
+    .tel {
+        display: none;
     }
 }
 
-@media (min-width: 1201px) and (max-width:1400px) {
+@media (min-width: 1280px) {
     .container {
-        width: 1140px;
+        max-width: 1250px;
+    }
+
+    .tel {
+        display: block;
     }
 }
 
-@media (min-width:1401px) {
+@media (min-width:1400px) {
     .container {
-        width: 1320px;
+        max-width: 1320px;
     }
 }
 
