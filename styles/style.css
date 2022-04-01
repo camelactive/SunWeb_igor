@@ -20,9 +20,11 @@
     align-items: center;
     overflow: scroll;
 }
+
 .header_nav::-webkit-scrollbar {
     display: none;
-  }
+}
+
 .header_top_content {
     display: flex;
     font-family: 'Value Sans Pro';
@@ -75,7 +77,6 @@
     color: #FFE091;
     align-items: center;
     display: flex;
-
 }
 
 .adress_add::before {
@@ -130,7 +131,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .header_nav_top {
@@ -199,34 +199,65 @@ a {
 .header_nav_bottom a:hover {
     color: #274646;
 }
-.header_top_left_hide{
+
+.header_top_left_hide {
     display: none;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-
-    /* for iPhone 13 */
-    .shimishimi, .tel, .shimmingi, .bell_round, .bell, .shopping_bag {
+@media (max-width: 576px) {
+    .shimishimi,
+    .tel,
+    .shimmingi,
+    .bell_round,
+    .bell,
+    .shopping_bag {
         display: none;
     }
-    .header_top_left_hide{
-        display: block;
-        position: absolute;
-        left: 80px;
-        top: 25px;
-
-    }
-
-    .container {
-        width: 540px;
-    }
-
     .adress_add {
         position: absolute;
         right: 25px;
         top: 25px;
     }
+    .header_top_left_menu {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+    }
+    .header_top_left_hide {
+        display: block;
+        position: absolute;
+        left: 80px;
+        top: 25px;
+    }
+    .container {
+        width: 100%;
+    }
+}
 
+@media (min-width: 576px) and (max-width: 768px) {
+    /* for iPhone 13 */
+    .shimishimi,
+    .tel,
+    .shimmingi,
+    .bell_round,
+    .bell,
+    .shopping_bag {
+        display: none;
+    }
+    .header_top_left_hide {
+        display: block;
+        position: absolute;
+        left: 80px;
+        top: 25px;
+    }
+    .container {
+        width: 540px;
+    }
+    .adress_add {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
     .header_top_left_menu {
         position: absolute;
         left: 25px;
@@ -238,11 +269,9 @@ a {
     .container {
         width: 720px;
     }
-
     .tel {
         display: none;
     }
-    
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -262,4 +291,3 @@ a {
         width: 1320px;
     }
 }
-
