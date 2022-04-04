@@ -1,0 +1,63 @@
+{
+    "0": {
+        "name": "Новинки",
+        "status": true,
+        "menu": []
+    },
+    "1": {
+        "name": "Роллы",
+        "status": true,
+        "menu": []
+    },
+    "2": {
+        "name": "Суши",
+        "status": true,
+        "menu": [
+            "классические",
+            "опалённые",
+            "запечённые",
+            "мини",
+            "темпура"
+        ]
+    },
+    "3": {
+        "name": "Десерты",
+        "status": true,
+        "menu": []
+    },
+    "4": {
+        "name": "Закуски",
+        "status": true,
+        "menu": []
+    },
+    "5": {
+        "name": "Наборы",
+        "status": true,
+        "menu": []
+    },
+    "6": {
+        "name": "Поке и боулы",
+        "status": true,
+        "menu": []
+    },
+    "7": {
+        "name": "Воки",
+        "status": true,
+        "menu": []
+    },
+    "8": {
+        "name": "Авторское",
+        "status": true,
+        "menu": []
+    },
+    "9": {
+        "name": "Онигири",
+        "status": true,
+        "menu": []
+    },
+    "10": {
+        "name": "Топпинги",
+        "status": true,
+        "menu": []
+    }
+}
