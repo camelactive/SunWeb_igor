@@ -13,10 +13,6 @@
 .container {
     width: auto;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
-
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
 }
 
 .header__top {
@@ -75,18 +71,10 @@
     align-items: center;
 }
 
-<<<<<<< HEAD
-.header_top_left_menu {
-    display: flex;
-    align-items: flex-start;
-    gap: 28px;
-=======
 .header__top_left_menu {
     display: flex;
     align-items: flex-start;
     gap: 28px;
-
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
 }
 
 .tel {
@@ -111,11 +99,7 @@
 
 .adress_add::before {
     content: url(/SunWeb_igor/images/location-add.png);
-<<<<<<< HEAD
-    width: 12.94px;
-=======
     width: 13px;
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
     height: 15px;
     padding-right: 10px;
     align-items: center;
@@ -193,10 +177,6 @@ a {
 
 .header__middle_container_item {
     white-space: nowrap;
-<<<<<<< HEAD
-=======
-
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
 }
 
 a {
@@ -258,23 +238,24 @@ a {
     display: none;
 }
 
-<<<<<<< HEAD
-.header_nav_top:hover~.header_nav_bottom {
-=======
+
 /* .header__nav_top:hover+.header__nav_bottom {
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
     display: flex;
 } */
 
 
 /* ///////////////////////////////////////Header////////////////////////////////////////// */
+
+
 /* //////////////////////////////////////////Slider////////////////////////////////////////// */
+
 .slider {
     display: flex;
     gap: 24px;
     overflow: scroll;
     margin-top: 180px;
 }
+
 .slider::-webkit-scrollbar {
     display: none;
 }
@@ -296,19 +277,10 @@ a {
     .header__top_right {
         display: none;
     }
-<<<<<<< HEAD
-    .header_top_left_hide {
-        display: block;
-    }
-    .header_top_left {
-=======
-
     .header__top_left_hide {
         display: block;
     }
-
     .header__top_left {
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
         width: 100%;
     }
     .container {
@@ -328,30 +300,16 @@ a {
     .header__top_right {
         display: none;
     }
-<<<<<<< HEAD
-    .header_top_left_hide {
-        display: block;
-    }
-    .header_top_right {
-=======
-
     .header__top_left_hide {
         display: block;
     }
-
     .header__top_right {
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
         display: none;
     }
     .container {
         width: 540px;
     }
-<<<<<<< HEAD
-    .header_top_left {
-=======
-
     .header__top_left {
->>>>>>> 490fbd0d7a3467e407a62de7a9a6633ad8c19a46
         display: flex;
         width: 100%;
     }
