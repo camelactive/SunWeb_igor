@@ -1,4 +1,5 @@
 /* //////////////////Header//////////////////////////// */
+
 .header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -8,11 +9,10 @@
     top: 0;
     left: 0;
 }
-.container{
+
+.container {
     width: auto;
-    padding: 0 .75rem;
     margin: 0 auto;
-    
 }
 
 .header_top {
@@ -53,8 +53,6 @@
     display: flex;
     justify-content: space-between;
     width: 204px;
-    padding-right: 21px;
-   
 }
 
 .shimmingi {
@@ -74,12 +72,13 @@
 }
 
 .header_top_left_menu {
-  display: flex;
-  align-items: flex-start;
-  gap: 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
 }
 
 .tel {
+    display: none;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -100,8 +99,8 @@
 
 .adress_add::before {
     content: url(/SunWeb_igor/images/location-add.png);
-    Width: 12.94px;
-    Height: 15px;
+    width: 12.94px;
+    height: 15px;
     padding-right: 10px;
     align-items: center;
     display: flex;
@@ -129,10 +128,10 @@ a {
     text-decoration: none;
     color: #274646;
     font-family: 'Value Sans Pro';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .rubble {
@@ -173,15 +172,11 @@ line-height: 16px;
     display: flex;
     align-items: center;
     width: 100%;
-
-
-
     line-height: 16px;
 }
 
 .header_middle_container_item {
     white-space: nowrap;
-    
 }
 
 a {
@@ -245,17 +240,19 @@ a {
 .header_top_left_hide {
     display: none;
 }
-.header_nav_top:hover ~.header_nav_bottom {
+
+.header_nav_top:hover~.header_nav_bottom {
     display: flex;
 }
 
+
 /* ///////////////////////////////////////Header////////////////////////////////////////// */
 
-/* Media////////////////////////////////// */
-@media (max-width: 576px) {
 
+/* Media////////////////////////////////// */
+
+@media (max-width: 576px) {
     .shimishimi,
-    .tel,
     .shimmingi,
     .bell_round,
     .summ,
@@ -263,15 +260,12 @@ a {
     .header_top_right {
         display: none;
     }
-
     .header_top_left_hide {
         display: block;
     }
-
     .header_top_left {
         width: 100%;
     }
-
     .container {
         max-width: 540px;
         width: 100%;
@@ -279,12 +273,9 @@ a {
     }
 }
 
-
 @media (min-width: 576px) and (max-width: 768px) {
-
     /* for iPhone 13 */
     .shimishimi,
-    .tel,
     .shimmingi,
     .bell_round,
     .summ,
@@ -292,33 +283,24 @@ a {
     .header_top_right {
         display: none;
     }
-
     .header_top_left_hide {
         display: block;
     }
-
     .header_top_right {
         display: none;
     }
-
     .container {
         width: 540px;
     }
-
     .header_top_left {
         display: flex;
         width: 100%;
     }
-
 }
 
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
-    }
-
-    .tel {
-        display: none;
     }
 }
 
@@ -326,17 +308,12 @@ a {
     .container {
         max-width: 960px;
     }
-
-    .tel {
-        display: none;
-    }
 }
 
 @media (min-width: 1280px) {
     .container {
         max-width: 1250px;
     }
-
     .tel {
         display: block;
     }
@@ -347,5 +324,6 @@ a {
         max-width: 1320px;
     }
 }
+
 
 /* Media///////////////////////////////////////////////// */
