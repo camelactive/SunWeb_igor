@@ -2,9 +2,10 @@ const baseUrl = "https://raw.githubusercontent.com/camelactive/assets/main/asset
 let categoryList = fetch(baseUrl)
     .then(response => response.json())
     .then(data => {
-        setNavLinks(data);    
+        setNavLinks(data);
         return data
     });
+
 function setNavLinks(data) {
     let navBlock = document.querySelector('.header__nav_top');
     if (navBlock) {
@@ -16,4 +17,3 @@ function setNavLinks(data) {
         })
     }
 }
-
