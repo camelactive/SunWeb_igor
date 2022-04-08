@@ -298,20 +298,24 @@ a {
     height: 100px;
     line-height: 100px;
     width: 100%;
-   
+
 }
-.pink{
+
+.pink {
     background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%);
     color: #FFD8E1;
 }
-.yellow{
+
+.yellow {
     background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%);
     color: #FFE091;
 }
-.blue{
+
+.blue {
     background: linear-gradient(0deg, #001918 0%, #003D3D 100%);
     color: #006666;
 }
+
 .neon__string {
     position: relative;
     display: flex;
@@ -321,7 +325,7 @@ a {
     /* animation: neonAnim 10s linear infinite; */
 }
 
-.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one,.neon_seven {
+.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
     transform: translateX(-800px);
 }
 
@@ -329,7 +333,7 @@ a {
     display: none;
 }
 
-.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one ,.neon_seven {
+.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
     position: absolute;
     animation: neonAnim 12s linear infinite;
 }
@@ -353,6 +357,7 @@ a {
 .neon_six {
     animation-delay: 10s;
 }
+
 .neon_seven {
     animation-delay: 12s;
 }
@@ -389,6 +394,7 @@ a {
     font-weight: 500;
     font-size: 32px;
     line-height: 32px;
+    
 }
 
 .menu {
@@ -398,25 +404,26 @@ a {
 .menu__grid {
     display: grid;
     grid-template-columns: repeat(4, 3fr);
-    row-gap: 30px;
+    row-gap: 32px;
+    column-gap: 24px;
 }
 
 .grid_card {
     display: flex;
     flex-direction: column;
-    width: 306px;
     height: 320px;
     align-items: center;
     background: #FFFFFF;
     border-radius: 8px;
     position: relative;
+    padding: 16px;
 }
 
 .grid_card_menu {
     display: flex;
     position: absolute;
     justify-content: space-between;
-    top: 0px;
+    top: 16px;
     left: 18px;
     width: 88px;
     height: 24px;
@@ -435,7 +442,7 @@ a {
 
 .grid_card_image {
     display: flex;
-    width: 274px;
+    /* width: 274px; */
     height: 200px;
 }
 
@@ -449,9 +456,13 @@ a {
 
 }
 
+.grid_card_info {
+    width: 100%;
+}
+
 .grid_card_text {
     align-self: flex-start;
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 
 .grid_card_weight {
@@ -465,9 +476,9 @@ a {
 
 .grid_card_price {
     display: flex;
-    align-self: flex-end;
+    justify-content: end;
     margin-top: 28px;
-    margin-right: 16px;
+    width: 100%;
     height: 34px;
 }
 
@@ -538,6 +549,55 @@ a {
     .menu__grid {
         grid-template-columns: 1fr;
     }
+    .grid_card {
+        height: 155px;
+    }
+
+    .grid_card_image {
+        width: 136px;
+        height: 99px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+
+
+    .grid_card_text {
+        position: absolute;
+        right: 86px;
+        top: 16px;
+
+    }
+
+    .grid_card_header {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color: #274646;
+    }
+
+    .grid_card_weight {
+        display: none;
+    }
+
+    .grid_card_price {
+        justify-self: center;
+        margin-top: 50px;
+    }
+
+    .grid_card_oldprice {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .grid_card_newprice {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
 }
 
 
@@ -572,10 +632,60 @@ a {
 
     .menu__grid {
         grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    .grid_card {
+        height: 155px;
+    }
+
+    .grid_card_image {
+        width: 136px;
+        height: 99px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+
+
+    .grid_card_text {
+        position: absolute;
+        right: 86px;
+        top: 16px;
+
+    }
+
+    .grid_card_header {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color: #274646;
+    }
+
+    .grid_card_weight {
+        display: none;
+    }
+
+    .grid_card_price {
+        justify-self: center;
+        margin-top: 50px;
+    }
+
+    .grid_card_oldprice {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .grid_card_newprice {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .container {
         max-width: 720px;
     }
@@ -592,7 +702,9 @@ a {
 
     .menu__grid {
         grid-template-columns: repeat(2, 6fr);
+
     }
+
 }
 
 @media (min-width: 1280px) {
