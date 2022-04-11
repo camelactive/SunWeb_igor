@@ -175,15 +175,11 @@ a {
     display: flex;
     align-items: center;
     width: 100%;
-
-
-
     line-height: 16px;
 }
 
 .header__middle_container_item {
     white-space: nowrap;
-
 }
 
 a {
@@ -393,8 +389,6 @@ a {
     content: url(../images/green-hover.svg);
 }
 
-
-
 /* //////////////////////////////////////////Grid////////////////////////////////////////// */
 .menu__header {
     font-family: 'Value Sans Pro';
@@ -469,8 +463,6 @@ a {
 
 }
 
-.grid_card_text {}
-
 .grid_card_weight {
     font-family: 'Value Sans Pro';
     font-style: normal;
@@ -540,9 +532,12 @@ a {
         display: none;
     }
 
+    .neon {
+        width: 600px;
+    }
+
     .header__top_right {
         position: absolute;
-
         width: 90%;
         height: 50px;
         margin: 0 auto;
@@ -643,7 +638,20 @@ a {
 
     .grid_card_header {
         justify-self: flex-start;
-        width: 100%;
+        width: 110%;
+        margin-left: -100px;
+    }
+
+    .neon, .slider {
+        min-width: 576px;
+    }
+
+    .slider {
+        margin-left: 25px;
+    }
+
+    .grid_card {
+        width: 576px;
     }
 }
 
@@ -662,9 +670,13 @@ a {
         display: none;
     }
 
+    .neon {
+        width: 767px;
+    }
+
     .header__top_right {
         position: absolute;
-
+        left: 50px;
         width: 90%;
         height: 50px;
         margin: 0 auto;
@@ -723,7 +735,6 @@ a {
         position: absolute;
         right: 86px;
         top: 16px;
-
     }
 
     .grid_card_header {
@@ -778,9 +789,7 @@ a {
 
     .menu__grid {
         grid-template-columns: repeat(2, 6fr);
-
     }
-
 }
 
 @media (min-width: 1280px) {
@@ -795,6 +804,10 @@ a {
     .menu__grid {
         grid-template-columns: repeat(4, 3fr);
     }
+
+    /* .neon {
+        width: 1440px;
+    } */
 }
 
 @media (min-width:1400px) {
@@ -805,75 +818,14 @@ a {
     .menu__grid {
         grid-template-columns: repeat(4, 3fr);
     }
+
+    /* .neon {
+        min-width: 100%;
+    } */
 }
 
 /* Media///////////////////////////////////////////////// */
-
-
-
-
 /* /////////////////////////////////////////FONTS/////////////////////////////////// */
-/* @font-face {
-    font-family: 'Value Sans Pro';
-    src: url('./fonts/ValueSansPro-Regular.eot');
-    src: url('./fonts/ValueSansPro-Regular.eot');
-    src: local('./fonts/Value Sans Pro Regular'), local('ValueSansPro-Regular'),
-        url('./fonts/ValueSansPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/ValueSansPro-Regular.woff2') format('woff2'),
-        url('./fonts/ValueSansPro-Regular.woff') format('woff'),
-        url('./fonts/ValueSansPro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'Value Sans Pro';
-    src: url('./fonts/ValueSansPro-MediumItalic.eot');
-    src: local('Value Sans Pro Medium Italic'), local('ValueSansPro-MediumItalic'),
-        url('./fonts/ValueSansPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/ValueSansPro-MediumItalic.woff2') format('woff2'),
-        url('./fonts/ValueSansPro-MediumItalic.woff') format('woff'),
-        url('./fonts/ValueSansPro-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Value Sans Pro';
-    src: url('./fonts/ValueSansPro-Italic.eot');
-    src: local('Value Sans Pro Italic'), local('ValueSansPro-Italic'),
-        url('./fonts/ValueSansPro-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/ValueSansPro-Italic.woff2') format('woff2'),
-        url('./fonts/ValueSansPro-Italic.woff') format('woff'),
-        url('./fonts/ValueSansPro-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-} */
-
-/* @font-face {
-    font-family: 'Value Sans Pro';
-    src: url('./fonts/ValueSansPro-Bold.eot');
-    src: local('Value Sans Pro Bold'), local('ValueSansPro-Bold'),
-        url('./fonts/ValueSansPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/ValueSansPro-Bold.woff2') format('woff2'),
-        url('./fonts/ValueSansPro-Bold.woff') format('woff'),
-        url('./fonts/ValueSansPro-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'Value Sans Pro';
-    src: url('./fonts/ValueSansPro-BlackItalic.eot');
-    src: local('Value Sans Pro Black Italic'), local('ValueSansPro-BlackItalic'),
-        url('./fonts/ValueSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/ValueSansPro-BlackItalic.woff2') format('woff2'),
-        url('./fonts/ValueSansPro-BlackItalic.woff') format('woff'),
-        url('./fonts/ValueSansPro-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-} */
-
 @font-face {
     font-family: 'Value Sans Pro';
     src: url('./fonts/ValueSansPro-Black.eot');
@@ -897,19 +849,6 @@ a {
     font-weight: 500;
     font-style: normal;
 }
-
-/* @font-face {
-    font-family: 'Value Sans Pro';
-    src: url('./fonts/ValueSansPro-BoldItalic.eot');
-    src: local('Value Sans Pro Bold Italic'), local('ValueSansPro-BoldItalic'),
-        url('./fonts/ValueSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/ValueSansPro-BoldItalic.woff2') format('woff2'),
-        url('./fonts/ValueSansPro-BoldItalic.woff') format('woff'),
-        url('./fonts/ValueSansPro-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-} */
-
 @font-face {
     font-family: 'Rimma_sans';
     src: local('RIMMA SANS BOLD'), local('RIMMA SANS-BOLD'),
