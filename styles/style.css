@@ -1,4 +1,8 @@
 /* //////////////////Header//////////////////////////// */
+
+.neon{
+    position: relative;
+}
 .header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -12,10 +16,8 @@
 }
 
 .container {
-    width: 1320px;
     width: auto;
     margin: 0 auto;
-
 }
 
 .header__top {
@@ -251,6 +253,7 @@ a {
     overflow: scroll;
     margin-top: 180px;
     width: 100%;
+    
 }
 
 .slider::-webkit-scrollbar {
@@ -309,9 +312,8 @@ a {
     background: linear-gradient(0deg, #001918 0%, #003D3D 100%);
     color: #006666;
 }
-
 .neon__string {
-    position: relative;
+    /* position: relative; */
     display: flex;
     gap: 176px;
     width: 100%;
@@ -407,21 +409,17 @@ a {
 .menu__grid {
     display: grid;
     margin-top: 30px;
-    /* grid-gap: 52px 0px; */
     grid-template-columns: repeat(4, 3fr);
 }
 
 .grid_card {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     background: #FFFFFF;
     border-radius: 8px;
     position: relative;
     padding: 16px;
     min-height: 320px;
-
-
 }
 
 .grid_card:hover {
@@ -542,19 +540,19 @@ a {
 @media (max-width: 575px) {
     .container {
         padding: 0 0.75rem;
-        width: 428px;
+
     }
 
     .menu__grid {
         grid-template-columns: auto;
-        row-gap: 16px;
+        /* row-gap: 16px; */
     }
 
     .shimishimi,
     .shimmingi .bell_round,
     .summ,
     .shopping_bag,
-    .header__top_right, 
+    .header__top_right,
     .tel,
     .grid_card_weight {
         display: none;
@@ -569,48 +567,83 @@ a {
         width: 100%
     }
 
+    .header__top_left_menu {
+        gap: 25px;
+    }
+
     .adress_add {
         margin-right: 25px;
     }
 
     .menu__header {
-
         font-size: 24px;
         line-height: 24px;
     }
 
-    .menu__grid {
-        grid-template-columns: auto;
-    }
-
     .grid_card {
-       min-height: 0px;
+        min-height: 155px;
         display: flex;
         flex-direction: row;
+        padding-bottom: 0px;
 
     }
-   .grid_card_text{
-     margin-left: 150px;
-   }
+
+    .grid_card_menu {
+        left: 9px;
+    }
 
     .grid_card_image {
         height: 99px;
+        width: 136px;
+        margin-top: 25px;
+        content: url(../images/Rectangle.svg);
+    }
+
+    .neon {
+        height: 80px;
+        margin-top: 32px;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .neon__text {
+        font-size: 60px;
+    }
+
+    .header__nav {
+        height: 44px;
+    }
+
+    .slider {
+        margin-top: 193px;
+    }
+
+    .menu__grid {
+        padding-top: 38px;
+    }
+
+    .mobile__hide {
+        display: none;
+    }
+
+    .grid_card_price {
+        margin-right: 0px;
+        padding-top: 16px;
+    }
+
+    .grid_card::after {
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color:#E5E5E5;
         position: absolute;
-        top: 40px;
-        left: 0;
+        bottom: 0;
+
     }
 }
 
 @media (min-width: 576px) and (max-width:767px) {
-
-    /* for iPhone 13 */
-    /* .shimishimi, */
     .shimmingi
-
-    /* .bell_round, */
-    /* .summ, */
-    /* .shopping_bag,
-    .header__top_right */
         {
         display: none;
     }
@@ -650,7 +683,7 @@ a {
     } */
 
     .container {
-        width: 540px;
+        max-width: 540px;
     }
 
     .header__top_left {
@@ -664,7 +697,7 @@ a {
     }
 
     .grid_card {
-        height: 155px;
+        /* height: 155px; */
         display: flex;
         flex-direction: row;
 
@@ -716,11 +749,18 @@ a {
         font-size: 24px;
         line-height: 24px;
     }
+    .grid_card {
+        min-height: 155px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0px;
+
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width:991px) {
     .container {
-        width: 720px;
+        max-width: 720px;
     }
 
     .menu__grid {
@@ -734,11 +774,25 @@ a {
     .tel {
         display: none;
     }
+
+    .shimishimi {
+        padding-left: 16px;
+    }
+
+    .header__top_left {
+        gap: 7px;
+    }
+
+    .header__top_right {
+        width: 214px;
+    }
+
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px)and (max-width: 1200px) {
     .container {
         max-width: 960px;
+
     }
 
     .menu__grid {
@@ -746,9 +800,10 @@ a {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
     .container {
         max-width: 1140px;
+
     }
 
     .tel {
