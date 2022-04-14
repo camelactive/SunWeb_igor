@@ -15,6 +15,11 @@
     left: 0;
     z-index: 1;
 }
+button{
+    background-color: inherit;
+    border: inherit;
+    cursor: pointer;
+}
 
 .container {
     width: auto;
