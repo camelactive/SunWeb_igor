@@ -186,9 +186,10 @@ a {
     white-space: nowrap;
 }
 
-a {
+.grid_card_menu a {
     text-decoration: none;
     color: #274646;
+    cursor: pointer;
 }
 
 .header__top_left_menu_mobile {
@@ -525,6 +526,7 @@ a {
     align-items: center;
     justify-content: center;
     display: flex;
+    cursor: pointer;
 
 }
 
