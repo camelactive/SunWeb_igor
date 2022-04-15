@@ -1,0 +1,296 @@
+/* Media////////////////////////////////// */
+@media (max-width: 575px) {
+
+body{
+    margin: 0 auto;
+}
+    .menu {
+        margin-top: 65px;
+    }
+    .shimishimi,
+    .shimmingi,
+    .tel,
+    .grid_card_weight {
+        display: none;
+    }
+
+    .header__top_right {
+        position: absolute;
+        left: 16px;
+        width: 88%;
+        height: 50px;
+        margin: 0 auto;
+        top: 425.04px;
+        background: #274646;
+        border-radius: 46px;
+    }
+
+    .summ {
+        margin-right: 17px;
+    }
+
+    .bell_round::after {
+        content: "корзина";
+        position: absolute;
+        left: 50px;
+    }
+
+    .shopping_bag_and_round {
+        position: absolute;
+        left: 19px;
+    }
+
+    .header__top_left_hide {
+        display: block;
+    }
+
+    .header__top_left {
+        justify-content: space-between;
+        width: 100%
+    }
+
+    .header__top_left_menu {
+        gap: 25px;
+    }
+
+    .adress_add {
+        margin-right: 25px;
+    }
+
+    .menu__header {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .grid_card {
+        min-height: 155px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0px;
+
+    }
+
+    .grid_card_menu {
+        left: 16px;
+       
+    }
+
+    .grid_card_image {
+        height: 99px;
+        width: 136px;
+        margin-top: 25px;
+        content: url(../images/Rectangle.svg);
+    }
+
+    .neon {
+        height: 80px;
+        margin-top: 32px;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .neon__text {
+        font-size: 60px;
+    }
+
+    .header__nav {
+        height: 44px;
+    }
+
+    .slider {
+        margin-top: 193px;
+    }
+
+    .menu__grid {
+        padding-top: 33px;
+        grid-template-columns: auto;
+    }
+
+    .mobile__hide {
+        display: none;
+    }
+
+    .grid_card_price {
+        margin-right: 0px;
+        padding-top: 16px;
+    }
+
+    .grid_card::after {
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color: #E5E5E5;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+    .shimmingi, .tel {
+        display: none;
+    }
+
+    .neon {
+        width: 100%;
+    }
+
+    .summ {
+        margin-right: 17px;
+    }
+
+    .header__top_right {
+        position: absolute;
+        left: 50px;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        top: 862.04px;
+        background: #274646;
+        border-radius: 46px;
+    }
+
+    .bell_round::after {
+        content: "корзина";
+        position: absolute;
+        left: 50px;
+    }
+
+    .shopping_bag_and_round {
+        position: absolute;
+        left: 19px;
+    }
+
+
+
+    .header__top_left {
+        display: flex;
+        width: 100%;
+    }
+
+    .menu__grid {
+        grid-template-columns: auto;
+        row-gap: 16px;
+    }
+
+    .grid_card {
+        /* height: 155px; */
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .grid_card_image {
+        height: 99px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+    .grid_card_text {
+        position: absolute;
+        right: 86px;
+        top: 16px;
+    }
+
+    .grid_card_header {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color: #274646;
+    }
+
+    .grid_card_weight {
+        display: none;
+    }
+
+    .grid_card_price {
+        justify-self: center;
+        margin-top: 50px;
+    }
+
+    .grid_card_oldprice {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .grid_card_newprice {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .menu__header {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .grid_card {
+        min-height: 155px;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0px;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+
+
+    .menu__grid {
+        grid-template-columns: repeat(2, 6fr);
+    }
+
+    .neon {
+        width: 100%;
+    }
+
+    .tel {
+        display: none;
+    }
+
+    .shimishimi {
+        padding-left: 16px;
+    }
+
+    .header__top_left {
+        gap: 7px;
+    }
+
+    .header__top_right {
+        width: 214px;
+    }
+
+}
+
+@media (min-width: 992px)and (max-width: 1200px) {
+
+
+    .menu__grid {
+        grid-template-columns: repeat(2, 6fr);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+    .tel {
+        display: block;
+    }
+
+    .menu__grid {
+        grid-template-columns: repeat(4, 3fr);
+    }
+}
+
+@media (min-width:1400px) {
+
+    .menu__grid {
+        grid-template-columns: repeat(4, 3fr);
+    }
+}
+
+/* Media///////////////////////////////////////////////// */

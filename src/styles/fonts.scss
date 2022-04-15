@@ -1,0 +1,44 @@
+/* /////////////////////////////////////////FONTS/////////////////////////////////// */
+@font-face {
+    font-family: 'Value Sans Pro';
+    src: url('/rollup/src/fonts/ValueSansPro-Black.eot');
+    src: local('Value Sans Pro Black'), local('ValueSansPro-Black'),
+        url('/rollup/src/fonts/ValueSansPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('/rollup/src/fonts/ValueSansPro-Black.woff2') format('woff2'),
+        url('/rollup/src/fonts/ValueSansPro-Black.woff') format('woff'),
+        url('/rollup/src/fonts/ValueSansPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Value Sans Pro';
+    src: url('/rollup/src/fonts/ValueSansPro-Medium.eot');
+    src: local('Value Sans Pro Medium'), local('ValueSansPro-Medium'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.woff2') format('woff2'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.woff') format('woff'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rimma_sans';
+    src: local('RIMMA SANS BOLD'), local('RIMMA SANS-BOLD'),
+        url(/rollup/src/fonts/RIMMA_SANS-BOLD.TTF) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Value Sans Pro';
+    src: url('/rollup/src/fonts/ValueSansPro-Medium.eot');
+    src: local('Value Sans Pro regula'), local('ValueSansPro-Medium'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.woff2') format('woff2'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.woff') format('woff'),
+        url('/rollup/src/fonts/ValueSansPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
