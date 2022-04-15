@@ -558,14 +558,205 @@ a {
 }
 
 /* //////////////////////////////////////////Grid////////////////////////////////////////// */
+/* /////////////////////////////////////////FONTS/////////////////////////////////// */
+@font-face {
+  font-family: "Value Sans Pro";
+  src: url("/rollup/src/fonts/ValueSansPro-Black.eot");
+  src: local("Value Sans Pro Black"), local("ValueSansPro-Black"), url("/rollup/src/fonts/ValueSansPro-Black.eot?#iefix") format("embedded-opentype"), url("/rollup/src/fonts/ValueSansPro-Black.woff2") format("woff2"), url("/rollup/src/fonts/ValueSansPro-Black.woff") format("woff"), url("/rollup/src/fonts/ValueSansPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Value Sans Pro";
+  src: url("/rollup/src/fonts/ValueSansPro-Medium.eot");
+  src: local("Value Sans Pro Medium"), local("ValueSansPro-Medium"), url("/rollup/src/fonts/ValueSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("/rollup/src/fonts/ValueSansPro-Medium.woff2") format("woff2"), url("/rollup/src/fonts/ValueSansPro-Medium.woff") format("woff"), url("/rollup/src/fonts/ValueSansPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rimma_sans";
+  src: local("RIMMA SANS BOLD"), local("RIMMA SANS-BOLD"), url(/rollup/src/fonts/RIMMA_SANS-BOLD.TTF) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Value Sans Pro";
+  src: url("/rollup/src/fonts/ValueSansPro-Medium.eot");
+  src: local("Value Sans Pro regula"), local("ValueSansPro-Medium"), url("/rollup/src/fonts/ValueSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("/rollup/src/fonts/ValueSansPro-Medium.woff2") format("woff2"), url("/rollup/src/fonts/ValueSansPro-Medium.woff") format("woff"), url("/rollup/src/fonts/ValueSansPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.footer {
+  width: 100%;
+  background: #274646;
+  display: flex;
+  justify-content: center;
+  height: 696px;
+}
+
+.shimi-hide {
+  display: none;
+}
+
+.footer__menu {
+  margin-top: 64px;
+}
+
+.footer__menu_top_list {
+  row-gap: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__menu_top_list_item {
+  font-family: "Value Sans Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #F7F7F7;
+}
+
+.footer__line {
+  margin: 36px auto 30px auto;
+  width: 400px;
+  height: 1px;
+  background-color: #FFBDC8;
+}
+
+.footer__menu_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__menu_bottom_logo {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+}
+
+.footer__menu_bottom_icons {
+  position: relative;
+  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.footer__info {
+  background-color: #565D95;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 60px;
+  height: 47px;
+}
+
+.footer__info_left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__info_left_item {
+  font-family: "Value Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.footer__info_right {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.orange {
+  color: #F2AF29;
+}
+
+.big_one {
+  width: 100%;
+  height: 100px;
+  background-color: #006666;
+}
+
+.instogram:hover {
+  content: url(../images/instagram-hover.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.WhatsApp:hover {
+  content: url(../images/whatsapp-hover.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.Telegram:hover {
+  content: url(../images/telegramm-hover.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.VK:hover {
+  content: url(../images/vk-hover.svg);
+  width: 32px;
+  height: 32px;
+}
+
 /* Media////////////////////////////////// */
 @media (max-width: 575px) {
   body {
     margin: 0 auto;
   }
 
+  .shimi-hide {
+    display: block;
+    width: 196px;
+    height: 16px;
+  }
+
+  .footer__line {
+    width: 211px;
+  }
+
+  .footer__menu_bottom_icons {
+    margin-top: 18px;
+  }
+
+  .frame31 {
+    display: none;
+  }
+
   .menu {
     margin-top: 65px;
+  }
+
+  .footer__info {
+    height: 154px;
+    display: block;
+    padding: 0px 16px;
+  }
+
+  .footer__info_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 12px;
+  }
+
+  .footer__info_right {
+    justify-content: flex-end;
+    margin-top: 16px;
   }
 
   .shimishimi,
@@ -682,9 +873,13 @@ a {
     position: absolute;
     bottom: 0;
   }
+  .grid_card::after .footer__info {
+    height: 154px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .shimmingi, .tel {
+  .shimmingi,
+.tel {
     display: none;
   }
 
@@ -789,6 +984,17 @@ a {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .footer__info {
+    height: 66px;
+    flex-direction: column;
+    padding: 6px 0px 0px 86px;
+  }
+
+  .footer__info_right {
+    justify-content: flex-end;
+    margin-right: 59px;
+  }
+
   .menu__grid {
     grid-template-columns: repeat(2, 6fr);
   }
@@ -833,31 +1039,3 @@ a {
   }
 }
 /* Media///////////////////////////////////////////////// */
-/* /////////////////////////////////////////FONTS/////////////////////////////////// */
-@font-face {
-  font-family: "Value Sans Pro";
-  src: url("/rollup/src/fonts/ValueSansPro-Black.eot");
-  src: local("Value Sans Pro Black"), local("ValueSansPro-Black"), url("/rollup/src/fonts/ValueSansPro-Black.eot?#iefix") format("embedded-opentype"), url("/rollup/src/fonts/ValueSansPro-Black.woff2") format("woff2"), url("/rollup/src/fonts/ValueSansPro-Black.woff") format("woff"), url("/rollup/src/fonts/ValueSansPro-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Value Sans Pro";
-  src: url("/rollup/src/fonts/ValueSansPro-Medium.eot");
-  src: local("Value Sans Pro Medium"), local("ValueSansPro-Medium"), url("/rollup/src/fonts/ValueSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("/rollup/src/fonts/ValueSansPro-Medium.woff2") format("woff2"), url("/rollup/src/fonts/ValueSansPro-Medium.woff") format("woff"), url("/rollup/src/fonts/ValueSansPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Rimma_sans";
-  src: local("RIMMA SANS BOLD"), local("RIMMA SANS-BOLD"), url(/rollup/src/fonts/RIMMA_SANS-BOLD.TTF) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Value Sans Pro";
-  src: url("/rollup/src/fonts/ValueSansPro-Medium.eot");
-  src: local("Value Sans Pro regula"), local("ValueSansPro-Medium"), url("/rollup/src/fonts/ValueSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("/rollup/src/fonts/ValueSansPro-Medium.woff2") format("woff2"), url("/rollup/src/fonts/ValueSansPro-Medium.woff") format("woff"), url("/rollup/src/fonts/ValueSansPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
