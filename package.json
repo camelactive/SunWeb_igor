@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

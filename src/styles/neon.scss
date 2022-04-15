@@ -1,0 +1,95 @@
+/* //////////////////////////////////////////Neon////////////////////////////////////////// */
+.neon {
+    display: flex;
+    overflow: hidden;
+    margin-top: 48px;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+
+}
+
+.pink {
+    background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%);
+    color: #FFD8E1;
+}
+
+.yellow {
+    background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%);
+    color: #FFE091;
+}
+
+.blue {
+    background: linear-gradient(0deg, #001918 0%, #003D3D 100%);
+    color: #006666;
+}
+
+.neon__string {
+    /* position: relative; */
+    display: flex;
+    gap: 176px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
+    transform: translateX(-800px);
+}
+
+.neon__text {
+    display: none;
+}
+
+.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
+    position: absolute;
+    animation: neonAnim 12s linear infinite;
+}
+
+.neon_two {
+    animation-delay: 2s;
+}
+
+.neon_three {
+    animation-delay: 4s;
+}
+
+.neon_four {
+    animation-delay: 6s;
+}
+
+.neon_five {
+    animation-delay: 8s;
+}
+
+.neon_six {
+    animation-delay: 10s;
+}
+
+.neon_seven {
+    animation-delay: 12s;
+}
+
+@keyframes neonAnim {
+    0% {
+        transform: translateX(1900px);
+        display: flex;
+    }
+
+    100% {
+        transform: translateX(-500px);
+
+    }
+}
+
+.neon__text {
+    display: flex;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Rimma_sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+}
+
+/* //////////////////////////////////////////Neon////////////////////////////////////////// */

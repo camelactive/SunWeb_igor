@@ -1,0 +1,40 @@
+//////////////////////////////////////////Slider////////////////////////////////////////// */
+.slider {
+    display: flex;
+    gap: 22px;
+    overflow: scroll;
+    margin-top: 180px;
+    width: 100%;
+
+}
+
+.slider::-webkit-scrollbar {
+    height: 2px;
+    width: 0px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+    border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background-color: #A0A0A0;
+}
+
+.slider__item {
+    margin-bottom: 40px;
+    flex-shrink: 0;
+    width: 152px;
+    height: 276px;
+    border: 1px solid #FFC858;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.slider__item>img {
+    width: 100%;
+    height: auto;
+}
+
+/* //////////////////////////////////////////Slider////////////////////////////////////////// */
