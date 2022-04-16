@@ -1,4 +1,5 @@
 /* //////////////////////////////////////////Neon////////////////////////////////////////// */
+
 .neon {
     display: flex;
     overflow: hidden;
@@ -6,7 +7,6 @@
     height: 100px;
     line-height: 100px;
     width: 100%;
-
 }
 
 .pink {
@@ -32,7 +32,13 @@
     justify-content: flex-start;
 }
 
-.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
+.neon_six,
+.neon_five,
+.neon_four,
+.neon_three,
+.neon_two,
+.neon_one,
+.neon_seven {
     transform: translateX(-800px);
 }
 
@@ -40,7 +46,13 @@
     display: none;
 }
 
-.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
+.neon_six,
+.neon_five,
+.neon_four,
+.neon_three,
+.neon_two,
+.neon_one,
+.neon_seven {
     position: absolute;
     animation: neonAnim 12s linear infinite;
 }
@@ -74,10 +86,8 @@
         transform: translateX(1900px);
         display: flex;
     }
-
     100% {
         transform: translateX(-500px);
-
     }
 }
 
@@ -91,5 +101,6 @@
     font-size: 80px;
     line-height: 100%;
 }
+
 
 /* //////////////////////////////////////////Neon////////////////////////////////////////// */
