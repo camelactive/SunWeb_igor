@@ -1,4 +1,5 @@
 /* //////////////////////////////////////////Grid////////////////////////////////////////// */
+
 .menu__header {
     font-family: 'Value Sans Pro';
     font-style: normal;
@@ -49,7 +50,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .grid_card_image {
@@ -68,7 +68,6 @@
     justify-self: flex-start;
     width: 100%;
     font-family: 'Value Sans Pro';
-
 }
 
 .grid_card_info {
@@ -84,13 +83,11 @@
     font-size: 14px;
     line-height: 18px;
     color: #757575;
-
 }
 
 .grid_card_price {
     display: flex;
     justify-content: end;
-    /* width: 80%; */
     margin-top: 21px;
     margin-right: 22px;
     font-family: 'Value Sans Pro';
@@ -129,16 +126,12 @@
     justify-content: center;
     display: flex;
     cursor: pointer;
-
 }
 
 .grid_card_newprice:hover {
     color: #E9E6E6;
     background: #274646;
 }
-
-
-
 
 .papper:hover {
     content: url(../images/paper-hover.svg);
@@ -151,7 +144,6 @@
 .green:hover {
     content: url(../images/green-hover.svg);
 }
-
 
 
 /* //////////////////////////////////////////Grid////////////////////////////////////////// */

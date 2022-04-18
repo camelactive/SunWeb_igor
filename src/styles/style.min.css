@@ -7,7 +7,6 @@
 @media (max-width: 575px) {
   .container {
     padding: 0 0.75rem;
-    
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -86,7 +85,7 @@ button {
 }
 
 .header__top_left {
-  gap: 23px;
+  gap: 18px;
   display: flex;
   justify-content: space-between;
 }
@@ -94,7 +93,7 @@ button {
 .header__top_right {
   display: flex;
   justify-content: space-between;
-  width: 204px;
+  width: 226px;
 }
 
 .shimmingi {
@@ -287,7 +286,6 @@ a {
   gap: 22px;
   overflow: scroll;
   margin-top: 180px;
-  width: 100%;
 }
 
 .slider::-webkit-scrollbar {
@@ -353,7 +351,13 @@ a {
   justify-content: flex-start;
 }
 
-.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
+.neon_six,
+.neon_five,
+.neon_four,
+.neon_three,
+.neon_two,
+.neon_one,
+.neon_seven {
   transform: translateX(-800px);
 }
 
@@ -361,7 +365,13 @@ a {
   display: none;
 }
 
-.neon_six, .neon_five, .neon_four, .neon_three, .neon_two, .neon_one, .neon_seven {
+.neon_six,
+.neon_five,
+.neon_four,
+.neon_three,
+.neon_two,
+.neon_one,
+.neon_seven {
   position: absolute;
   animation: neonAnim 12s linear infinite;
 }
@@ -467,7 +477,6 @@ a {
 .grid_card_image {
   display: flex;
   height: 200px;
-  max-width: 274px;
 }
 
 .grid_card_header {
@@ -500,7 +509,6 @@ a {
 .grid_card_price {
   display: flex;
   justify-content: end;
-  /* width: 80%; */
   margin-top: 21px;
   margin-right: 22px;
   font-family: "Value Sans Pro";
@@ -714,6 +722,10 @@ a {
   height: 32px;
 }
 
+.footer__menu_bottom_logo .frame31 {
+  width: 32px;
+}
+
 /* Media////////////////////////////////// */
 @media (max-width: 575px) {
   body {
@@ -803,7 +815,7 @@ a {
   }
 
   .header__top_left_menu {
-    gap: 25px;
+    gap: 19px;
   }
 
   .adress_add {
@@ -837,7 +849,6 @@ a {
     height: 80px;
     margin-top: 32px;
     width: 100%;
-    padding-right: 20px;
   }
 
   .neon__text {
