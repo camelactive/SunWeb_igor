@@ -7,6 +7,7 @@
 @media (max-width: 575px) {
   .container {
     padding: 0 0.75rem;
+    
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
