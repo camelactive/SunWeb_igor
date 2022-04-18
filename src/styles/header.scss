@@ -15,7 +15,8 @@
     left: 0;
     z-index: 1;
 }
-button{
+
+button {
     background-color: inherit;
     border: inherit;
     cursor: pointer;
@@ -246,6 +247,11 @@ a {
 
 .header__top_left_hide {
     display: none;
+}
+
+.btn_menu {
+    width: 32px;
+    height: 32px;
 }
 
 

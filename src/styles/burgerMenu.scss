@@ -1,0 +1,53 @@
+/* //////////////////////////////////////////burger_menu_hide////////////////////////////////////////// */
+
+.burger_menu_hide {
+    display: none;
+}
+
+.header__top_click {
+    background-color: #FFFFFF;
+}
+.cross_img{
+    display: flex;
+    cursor: pointer;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.adress_add_green{
+    color: #006666;
+}
+.summ_green{
+    color: #006666;
+}
+.adress_add_green::before {
+    content: url(../images/adress_add_green.svg);
+  }
+  .shimmingi_green{
+    color: #006666;
+  }
+  .shimmingi_green::before {
+    content: url(../images/shimmingi_green.svg);
+  }
+  .header_nav_top_burger{
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      row-gap: 32px;
+      padding-top: 64px;
+      padding-left: 51px;
+      box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .header__nav_top_title_hide{
+     display: none;
+  }
+  .header__nav_top_title {
+    display: flex;
+    color: #A0A0A0;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: lowercase;
+}
