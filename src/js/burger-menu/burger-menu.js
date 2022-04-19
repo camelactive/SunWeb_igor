@@ -1,23 +1,3 @@
-const baseUrl = "https://raw.githubusercontent.com/camelactive/SunWeb_igor/master/assets/assets.json";
-fetch(baseUrl)
-    .then(response => response.json())
-    .then(data => {
-        setNavLinks(data);
-        return data
-    });
-
-function setNavLinks(data) {
-    let navBlock = document.querySelector('.header__nav_top');
-    if (navBlock) {
-        Object.entries(data).forEach(item => {
-            if (item[1].status == true) {
-                let navElenet = `<span class="header__middle_container_item"> <a href="">${item[1].name}</a></span>`;
-                navBlock.innerHTML += navElenet;
-            }
-        });
-    }
-}
-
 let btnMenu = document.querySelector(".btn_menu");
 let gridSection = document.querySelectorAll(".menu");
 let neonSection = document.querySelectorAll(".neon");
@@ -40,10 +20,10 @@ let footerMenu =document.querySelector(".footer");
 btnMenu.addEventListener("click", BurgerMenu);
 function BurgerMenu() {
     gridSection.forEach(element => {
-        element.classList.toggle("burger_menu_hide");
+        element.classList.toggle("burger_menu_hide")
     });
     neonSection.forEach(element => {
-        element.classList.toggle("burger_menu_hide");
+        element.classList.toggle("burger_menu_hide")
     });
     sliderSection.classList.toggle("burger_menu_hide");
     headerTop.classList.toggle("header__top_click");
