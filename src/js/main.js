@@ -8,5 +8,6 @@ import "./products/products-susi-opal.js"
 import "./products/products-pokeandbule-classic.js"
 import "./products/products-pokeandbule-opal.js"
 import "./slider/slider.js"
+import "./shopping-bag/shopping-bag.js"
 
 
