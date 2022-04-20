@@ -15,6 +15,8 @@ let headerNavTop = document.querySelector(".header__nav_top");
 // let headerNavTopTitle = document.querySelector(".header__nav_top_title");
 let footerMenu =document.querySelector(".footer");
 let footerInfo = document.querySelector(".footer__info");
+let headerTopLeftHide =document.querySelector(".header__top_left_hide");
+let headerTopLeftHideGreen =document.querySelector(".header__top_left_hide_green")
 
 
 
@@ -54,5 +56,10 @@ function BurgerMenu() {
     footerInfo.classList.toggle("burger_menu_hide");
     let footerBottom = document.querySelector(".footer__bottom");
     footerBottom.classList.toggle("footer__hide");
+
+
+    headerTopLeftHide.classList.toggle("header__top_left_hide_green")
+    headerTopLeftHideGreen.classList.toggle("header__top_left_hide_green")
+
 
 }

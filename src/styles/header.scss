@@ -164,6 +164,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2px;
 }
 
 .shopping_bag_and_round {
@@ -254,6 +255,8 @@ a {
     width: 32px;
     height: 32px;
 }
-
+.summ::after{
+    content: "₽";
+}
 
 /* ///////////////////////////////////////Header////////////////////////////////////////// */

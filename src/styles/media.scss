@@ -37,6 +37,7 @@
         margin-top: 16px;
     }
     .shimishimi,
+    .shimishimi_green,
     .shimmingi,
     .tel,
     .grid_card_weight {
@@ -267,20 +268,13 @@
     .menu__grid {
         grid-template-columns: repeat(4, 3fr);
     }
-    // .footer_burger{
-    //     right: 3%;
-    //     width: 71%;
-    // }
+   
 }
 
 @media (min-width:1400px) {
     .menu__grid {
         grid-template-columns: repeat(4, 3fr);
     }
-    // .footer_burger{
-    //     right: 15%;
-    //     width: 54%;
-    // }
 }
 
 

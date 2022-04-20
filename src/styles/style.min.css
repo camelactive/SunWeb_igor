@@ -195,6 +195,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2px;
 }
 
 .shopping_bag_and_round {
@@ -283,6 +284,10 @@ a {
 .btn_menu {
   width: 32px;
   height: 32px;
+}
+
+.summ::after {
+  content: "₽";
 }
 
 /* ///////////////////////////////////////Header////////////////////////////////////////// */
@@ -778,6 +783,7 @@ a {
   }
 
   .shimishimi,
+.shimishimi_green,
 .shimmingi,
 .tel,
 .grid_card_weight {
@@ -1142,4 +1148,8 @@ a {
   right: 0;
   width: 76%;
   top: 0px;
+}
+
+.header__top_left_hide_green {
+  display: none;
 }
