@@ -214,6 +214,7 @@ a {
   align-items: center;
   width: 100%;
   line-height: 16px;
+  background-color: #FFFFFF;
 }
 
 .header__middle_container_item {
@@ -1099,9 +1100,11 @@ a {
   padding-top: 64px;
   padding-left: 51px;
   box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
-  width: 272px;
+  width: 100%;
   align-self: flex-start;
   margin: 0;
+  position: absolute;
+  top: 55px;
 }
 
 .header__nav_top_title {
@@ -1120,10 +1123,23 @@ a {
 }
 
 .footer_burger {
+  display: none;
   z-index: 1;
   position: fixed;
-  width: 52%;
-  right: 295px;
+  max-width: 1128px;
   top: 55px;
   height: 859px;
+  right: 10%;
+  width: 50%;
+}
+
+.footer__hide {
+  display: none;
+}
+
+.footer__burger {
+  position: absolute;
+  right: 0;
+  width: 76%;
+  top: 0px;
 }

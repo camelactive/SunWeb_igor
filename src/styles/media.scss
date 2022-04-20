@@ -267,12 +267,20 @@
     .menu__grid {
         grid-template-columns: repeat(4, 3fr);
     }
+    // .footer_burger{
+    //     right: 3%;
+    //     width: 71%;
+    // }
 }
 
 @media (min-width:1400px) {
     .menu__grid {
         grid-template-columns: repeat(4, 3fr);
     }
+    // .footer_burger{
+    //     right: 15%;
+    //     width: 54%;
+    // }
 }
 
 

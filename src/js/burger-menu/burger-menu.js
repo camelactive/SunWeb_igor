@@ -14,6 +14,7 @@ let summ = document.querySelector(".summ");
 let headerNavTop = document.querySelector(".header__nav_top");
 // let headerNavTopTitle = document.querySelector(".header__nav_top_title");
 let footerMenu =document.querySelector(".footer");
+let footerInfo = document.querySelector(".footer__info");
 
 
 
@@ -46,7 +47,12 @@ function BurgerMenu() {
     let headerNavTopTitle = document.querySelector(".header__nav_top_title");
 
     headerNavTopTitle.classList.toggle("header__nav_top_title_hide");
+    let footerMenu =document.querySelector(".footer");
+    footerMenu.classList.toggle("footer__hide");
 
-    footerMenu.classList.toggle("footer_burger");
+    
+    footerInfo.classList.toggle("burger_menu_hide");
+    let footerBottom = document.querySelector(".footer__bottom");
+    footerBottom.classList.toggle("footer__hide");
 
 }
