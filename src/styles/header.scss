@@ -1,5 +1,4 @@
 * //////////////////Header//////////////////////////// */
-
 .neon {
     position: relative;
 }
@@ -21,8 +20,6 @@ button {
     border: inherit;
     cursor: pointer;
 }
-
-
 
 .header__top {
     background-color: #274646;
@@ -85,7 +82,6 @@ button {
     align-items: flex-start;
     gap: 28px;
     line-height: 10px;
-
 }
 
 .tel {
@@ -255,8 +251,10 @@ a {
     width: 32px;
     height: 32px;
 }
-.summ::after{
+
+.summ::after {
     content: "₽";
 }
+
 
 /* ///////////////////////////////////////Header////////////////////////////////////////// */

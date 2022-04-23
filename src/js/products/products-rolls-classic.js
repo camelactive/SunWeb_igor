@@ -1,6 +1,5 @@
 let menuGrid = document.querySelector(".js-products_rolls_classic")
-let productsRolls = [
-    {
+let productsRollsClassic = [{
         id: 1,
         name: "susi octopus",
         weight: "850г",
@@ -81,7 +80,7 @@ let productsRolls = [
 // }
 
 function productsCards() {
-    for (let i = 0; i < productsRolls.length; i++) {
+    for (let i = 0; i < productsRollsClassic.length; i++) {
         menuGrid.innerHTML += `
 <div class="grid_card">
 <div class="grid_card_images">
@@ -98,20 +97,20 @@ function productsCards() {
             </div>
         </a>
     </div>
-    <div class="grid_card_image"><img ${productsRolls[i].image} alt="susiPicture"></div>
+    <div class="grid_card_image"><img ${productsRollsClassic[i].image} alt="susiPicture"></div>
 </div>
 <div class="grid_card_info">
     <div class="grid_card_text">
-        <div class="grid_card_header">${productsRolls[i].name}</div>
-        <div class="grid_card_weight">${productsRolls[i].count}/${productsRolls[i].weight}</div>
+        <div class="grid_card_header">${productsRollsClassic[i].name}</div>
+        <div class="grid_card_weight">${productsRollsClassic[i].count}/${productsRollsClassic[i].weight}</div>
     </div>
     <div class="grid_card_price">
-        <div class="grid_card_oldprice">${productsRolls[i].oldprice}</div>
-        <div class="grid_card_newprice">${productsRolls[i].price}</div>
+        <div class="grid_card_oldprice">${productsRollsClassic[i].oldprice}</div>
+        <div class="grid_card_newprice" data-name ="${productsRollsClassic[i].name}">${productsRollsClassic[i].price}</div>
     </div>
 </div>
 </div>`
     }
-    
+
 }
 productsCards()
