@@ -106,7 +106,7 @@ function productsCards() {
     </div>
     <div class="grid_card_price">
         <div class="grid_card_oldprice">${productsPokeAndBuleOpal[i].oldprice}</div>
-        <div class="grid_card_newprice">${productsPokeAndBuleOpal[i].price}</div>
+        <div class="grid_card_newprice" data-name ="${productsPokeAndBuleOpal[i].name}">${productsPokeAndBuleOpal[i].price}</div>
     </div>
 </div>
 </div>`
