@@ -34,13 +34,25 @@ export default basket = {
             }
         })
         document.querySelector(".js-summ").innerHTML = this.summ;
-    
+    },
+
+
+    //////////////////////////Добавление в локал сторэдж//////////////////////////
+    _addInLocalStorage(){
+        this.products.forEach(product => {
+                console.log(product)
+                localStorage.setItem(`"product${product.id}"`, JSON.stringify(product));
+
+        })
     }
+    //////////////////////////Добавление в локал сторэдж//////////////////////////
 }
 
 let basketAddButton = document.querySelectorAll('.grid_card_newprice').forEach(item => {
     item.addEventListener('click', function (e) {
         basket.add(e.target.getAttribute('product_id'));
+        basket._addInLocalStorage()
+        
         
     })
 });

@@ -26,3 +26,14 @@
 // }
 
 
+
+// import products from "../products/products.js"
+// let basketAddButton = document.querySelectorAll('.grid_card_newprice');
+
+// basketAddButton.forEach((addButton) => {
+//     addButton.addEventListener("click", addProductInBasket);
+//  })
+
+//  function addProductInBasket(){
+//      console.log(products)
+//  }
