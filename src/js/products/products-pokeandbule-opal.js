@@ -1,7 +1,6 @@
 let menuGrid = document.querySelector(".js-products_pokeandbule_opal")
-let productsPokeAndBule = [
-    {
-        id: 1,
+let products = [{
+        id: 41,
         name: "susi octopus",
         weight: "850г",
         count: "5шт",
@@ -10,7 +9,7 @@ let productsPokeAndBule = [
         image: 'src="./src/images/frame-true.svg"'
     },
     {
-        id: 2,
+        id: 42,
         name: "susi fish",
         weight: "950г",
         count: "10шт",
@@ -18,7 +17,7 @@ let productsPokeAndBule = [
         oldprice: 10000,
         image: 'src="./src/images/frame-true.svg"'
     }, {
-        id: 3,
+        id: 43,
         name: "susi beef",
         weight: "1000г",
         count: "8шт",
@@ -26,7 +25,7 @@ let productsPokeAndBule = [
         oldprice: 10000,
         image: 'src="./src/images/frame-true.svg"'
     }, {
-        id: 4,
+        id: 44,
         name: "susi vegan",
         weight: "750г",
         count: "1шт",
@@ -35,7 +34,7 @@ let productsPokeAndBule = [
         image: 'src="./src/images/frame-true.svg"'
     },
     {
-        id: 1,
+        id: 45,
         name: "susi octopus",
         weight: "850г",
         count: "5шт",
@@ -44,7 +43,7 @@ let productsPokeAndBule = [
         image: 'src="./src/images/frame-true.svg"'
     },
     {
-        id: 2,
+        id: 46,
         name: "susi fish",
         weight: "950г",
         count: "10шт",
@@ -52,7 +51,7 @@ let productsPokeAndBule = [
         oldprice: 10000,
         image: 'src="./src/images/frame-true.svg"'
     }, {
-        id: 3,
+        id: 47,
         name: "susi beef",
         weight: "1000г",
         count: "8шт",
@@ -60,7 +59,7 @@ let productsPokeAndBule = [
         oldprice: 10000,
         image: 'src="./src/images/frame-true.svg"'
     }, {
-        id: 4,
+        id: 48,
         name: "susi vegan",
         weight: "750г",
         count: "1шт",
@@ -81,7 +80,7 @@ let productsPokeAndBule = [
 // }
 
 function productsCards() {
-    for (let i = 0; i < productsPokeAndBule.length; i++) {
+    for (let i = 0; i < products.length; i++) {
         menuGrid.innerHTML += `
 <div class="grid_card">
 <div class="grid_card_images">
@@ -98,20 +97,20 @@ function productsCards() {
             </div>
         </a>
     </div>
-    <div class="grid_card_image"><img ${productsPokeAndBule[i].image} alt="susiPicture"></div>
+    <div class="grid_card_image"><img ${products[i].image} alt="susiPicture"></div>
 </div>
 <div class="grid_card_info">
     <div class="grid_card_text">
-        <div class="grid_card_header">${productsPokeAndBule[i].name}</div>
-        <div class="grid_card_weight">${productsPokeAndBule[i].count}/${productsPokeAndBule[i].weight}</div>
+        <div class="grid_card_header">${products[i].name}</div>
+        <div class="grid_card_weight">${products[i].count}/${products[i].weight}</div>
     </div>
     <div class="grid_card_price">
-        <div class="grid_card_oldprice">${productsPokeAndBule[i].oldprice}</div>
-        <div class="grid_card_newprice">${productsPokeAndBule[i].price}</div>
+        <div class="grid_card_oldprice">${products[i].oldprice}</div>
+        <div class="grid_card_newprice" product_id="${products[i].id}">${products[i].price}</div>
     </div>
 </div>
 </div>`
     }
-    
+
 }
 productsCards()

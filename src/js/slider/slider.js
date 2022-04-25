@@ -1,7 +1,6 @@
 let slider = document.querySelector(".js-slider");
 
-let sliderImages = [
-    {
+let sliderImages = [{
         id: 1,
         image: 'src="./src/images/slider-image1.png"'
     },
@@ -27,8 +26,18 @@ let sliderImages = [
     }, {
         id: 8,
         image: 'src="./src/images/slider-image3.png"'
+    }, {
+        id: 6,
+        image: 'src="./src/images/slider-image1.png"'
+    }, {
+        id: 7,
+        image: 'src="./src/images/slider-image2.png"'
+    }, {
+        id: 8,
+        image: 'src="./src/images/slider-image3.png"'
     },
 ]
+
 function sliderContent() {
     for (let i = 0; i < sliderImages.length; i++) {
         slider.innerHTML += `  

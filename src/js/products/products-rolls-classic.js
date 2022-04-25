@@ -1,6 +1,5 @@
 let menuGrid = document.querySelector(".js-products_rolls_classic")
-let productsRolls = [
-    {
+export default products = [{
         id: 1,
         name: "susi octopus",
         weight: "850г",
@@ -35,7 +34,7 @@ let productsRolls = [
         image: 'src="./src/images/frame-true.svg"'
     },
     {
-        id: 1,
+        id: 5,
         name: "susi octopus",
         weight: "850г",
         count: "5шт",
@@ -44,7 +43,7 @@ let productsRolls = [
         image: 'src="./src/images/frame-true.svg"'
     },
     {
-        id: 2,
+        id: 6,
         name: "susi fish",
         weight: "950г",
         count: "10шт",
@@ -52,7 +51,7 @@ let productsRolls = [
         oldprice: 10000,
         image: 'src="./src/images/frame-true.svg"'
     }, {
-        id: 3,
+        id: 7,
         name: "susi beef",
         weight: "1000г",
         count: "8шт",
@@ -60,7 +59,7 @@ let productsRolls = [
         oldprice: 10000,
         image: 'src="./src/images/frame-true.svg"'
     }, {
-        id: 4,
+        id: 8,
         name: "susi vegan",
         weight: "750г",
         count: "1шт",
@@ -70,18 +69,9 @@ let productsRolls = [
     }
 ]
 
-// let shimmingiClick = document.querySelector(".shimmingi");
-// shimmingiClick.addEventListener("click", testFunction);
-
-// function testFunction() {
-//     // console.log(products);
-//     for (let i = 0; i < products.length; i++) {
-//         console.log(products[i]) 
-//     }
-// }
 
 function productsCards() {
-    for (let i = 0; i < productsRolls.length; i++) {
+    for (let i = 0; i < products.length; i++) {
         menuGrid.innerHTML += `
 <div class="grid_card">
 <div class="grid_card_images">
@@ -98,20 +88,20 @@ function productsCards() {
             </div>
         </a>
     </div>
-    <div class="grid_card_image"><img ${productsRolls[i].image} alt="susiPicture"></div>
+    <div class="grid_card_image"><img ${products[i].image} alt="susiPicture"></div>
 </div>
 <div class="grid_card_info">
     <div class="grid_card_text">
-        <div class="grid_card_header">${productsRolls[i].name}</div>
-        <div class="grid_card_weight">${productsRolls[i].count}/${productsRolls[i].weight}</div>
+        <div class="grid_card_header">${products[i].name}</div>
+        <div class="grid_card_weight">${products[i].count}/${products[i].weight}</div>
     </div>
     <div class="grid_card_price">
-        <div class="grid_card_oldprice">${productsRolls[i].oldprice}</div>
-        <div class="grid_card_newprice">${productsRolls[i].price}</div>
+        <div class="grid_card_oldprice">${products[i].oldprice}</div>
+        <div class="grid_card_newprice" product_id="${products[i].id}">${products[i].price}</div>
     </div>
 </div>
 </div>`
     }
-    
+
 }
 productsCards()

@@ -1,0 +1,46 @@
+import products from "../products/products.js"
+export default basket = {
+    quantity: 0,
+    summ: 0,
+    products: [],
+    add(productId) {
+        let existProduct = this.products.find(item => item.id == productId);
+        if (!existProduct) {
+            this.products.push({
+                id: productId,
+                quantity: 1
+            })
+        } else {
+            existProduct.quantity++;
+        }
+        this._calculateQuantity();
+        this._calculateSumm();
+    },
+    _calculateQuantity() {
+        this.quantity = 0;
+        this.products.forEach(product => {
+            this.quantity += product.quantity
+        })
+        document.querySelector('.js-bell_round-count').innerHTML = this.quantity;
+    },
+    _calculateSumm() {
+        this.summ = 0;
+        this.products.forEach(product => {
+            let databaseProduct = products.find(item => product.id == item.id);
+            if (databaseProduct) {
+                // console.log(databaseProduct); 
+                console.log(product)
+                this.summ += parseInt(product.quantity) * parseFloat(databaseProduct.price); 
+            }
+        })
+        document.querySelector(".js-summ").innerHTML = this.summ;
+    
+    }
+}
+
+let basketAddButton = document.querySelectorAll('.grid_card_newprice').forEach(item => {
+    item.addEventListener('click', function (e) {
+        basket.add(e.target.getAttribute('product_id'));
+        
+    })
+});

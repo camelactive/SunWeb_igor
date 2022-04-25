@@ -1,46 +1,28 @@
-let bellRoundCount = document.querySelector(".js-bell_round-count");
-let shoppingBagSumm = document.querySelector(".js-summ");
-let gridCardNewPrices = document.querySelectorAll(".grid_card_newprice");
-bellRoundCount.textContent = 0;
-shoppingBagSumm.textContent = "0 ₽";
-bellRoundCount.textContent = localStorage.getItem("count");
-shoppingBagSumm.textContent = localStorage.getItem("summ");
-let priceSumm = 0;
-let countSumm = 0;
-function AddProduct(target) {
+// import "./shopping-bag-countAndSumm"
+// let gridCardNewPrices = document.querySelectorAll(".grid_card_newprice");
+// let shoppingBagClickList = document.querySelector(".js-shopping_bag_click");
+// gridCardNewPrices.forEach((element) => {
+//     element.addEventListener("click", AddProduct2);
+// })
+// let items = 0;
+// if (localStorage.length == 0) {
+//     items = localStorage.length
+// } else if (localStorage.length != 0) {
+//     items = localStorage.length - 2
+// }
+// shoppingBagClickList.innerHTML = `<button type = button class ="clear_button js-clear-button">clear</button>`
+// // добавление продуктов в локал сторедж
+// function AddProduct2(product) {
+//     let products = [product.path[0].innerText, product.path[0].dataset.name];
+//     localStorage.setItem(`"productsList${[items]}"`, JSON.stringify(products));
+//     // отрисовка в корзине по клику
+//     shoppingBagClickList.innerHTML += `
+//     <div>${products}<a><img class ="deleteIcon js-delete-icon" src="./src/images/delete.svg" alt="delete"></a></div>`
+//     items = items + 1;
+// }
+// for (let i = 0; i < localStorage.length - 2; i++) {
+//     shoppingBagClickList.innerHTML += `
+//     <div>${JSON.parse(localStorage.getItem(`"productsList${[i]}"`))} <a><img class ="deleteIcon js-delete-icon" src="./src/images/delete.svg" alt="delete"></a></div>`
+// }
 
-    priceSumm = Number(shoppingBagSumm.textContent) + Number(target.target.innerText);
-    countSumm = Number(bellRoundCount.textContent) + 1;
-    bellRoundCount.textContent = `${countSumm}`
-    shoppingBagSumm.textContent = `${priceSumm}`
-    console.log(`priceSumm = ${priceSumm}`)
-    console.log(`countSumm = ${countSumm}`)
-    localStorage.setItem("summ", priceSumm);
-    localStorage.setItem("count", countSumm)
-}
-gridCardNewPrices.forEach((element) => {
-    element.addEventListener("click", AddProduct);
-})
 
-
-
-
-
-let shoppingBagAndRoundOpen = false;
-let shoppingBagAndRound = document.querySelector(".shopping_bag_and_round");
-shoppingBagAndRound.addEventListener("click", ShoppingBagAndRoundOpen);
-function ShoppingBagAndRoundOpen() {
-    if (shoppingBagAndRoundOpen == false) {
-        shoppingBagAndRoundOpen = true;
-        shoppingBagAndRound.innerHTML += ` 
-    <div class ="shopping_bagandround_open">Корзина</div> `}
-    else {shoppingBagAndRoundOpen = false; 
-        shoppingBagAndRound.innerHTML = `
-    <a href="#"> 
-    <img class="shopping_bag" src="./src/images/shopping-bag.png" alt="shopping-bag">
-    <img class="shopping_bag_green burger_menu_hide" src="./src/images/shopping-bag_green.svg" alt="shopping-bag">
-</a>
-<a href="#">
-    <div class="bell_round js-bell_round-count">${countSumm}</div>
-</a>` }
-}
