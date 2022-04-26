@@ -12,9 +12,12 @@ export default basket = {
             })
         } else {
             existProduct.quantity++;
+
         }
         this._calculateQuantity();
         this._calculateSumm();
+        this._addInLocalStorage();
+
     },
     _calculateQuantity() {
         this.quantity = 0;
@@ -28,9 +31,7 @@ export default basket = {
         this.products.forEach(product => {
             let databaseProduct = products.find(item => product.id == item.id);
             if (databaseProduct) {
-                // console.log(databaseProduct); 
-                console.log(product)
-                this.summ += parseInt(product.quantity) * parseFloat(databaseProduct.price); 
+                this.summ += parseInt(product.quantity) * parseFloat(databaseProduct.price);
             }
         })
         document.querySelector(".js-summ").innerHTML = this.summ;
@@ -38,21 +39,45 @@ export default basket = {
 
 
     //////////////////////////Добавление в локал сторэдж//////////////////////////
-    _addInLocalStorage(){
-        this.products.forEach(product => {
-                console.log(product)
-                localStorage.setItem(`"product${product.id}"`, JSON.stringify(product));
-
-        })
-    }
-    //////////////////////////Добавление в локал сторэдж//////////////////////////
+    _addInLocalStorage() {
+        this.products.forEach(product => { 
+                localStorage.setItem(`"products${product.id}"` ,JSON.stringify(product));
+         })     
+    },   
+   
 }
+    //////////////////////////Добавление в локал сторэдж//////////////////////////
+
 
 let basketAddButton = document.querySelectorAll('.grid_card_newprice').forEach(item => {
     item.addEventListener('click', function (e) {
         basket.add(e.target.getAttribute('product_id'));
-        basket._addInLocalStorage()
-        
-        
+      
+
+
     })
 });
+
+
+
+
+
+////////////////////////////////////////////////////////////попытка создания добавления в сторедж
+ // _addInLocalStorage() {
+    //     let StorageProducts = [];
+    //     this.products.forEach(product => {
+    //         let databaseProduct = products.find(item => product.id == item.id);
+    //         StorageProducts.push({ 
+    //             name : databaseProduct.name,
+    //             price: databaseProduct.price,
+    //             id: databaseProduct.id,
+    //             quantity : product.quantity,
+    //             }
+               
+    //         )
+    //         StorageProducts.forEach(product =>{
+    //             document.querySelector(".js-shopping_bag_click").innerHTML +=`<div>${product.name}</div>`})
+          
+    //     })
+        
+    //     console.log(StorageProducts)
