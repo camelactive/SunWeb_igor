@@ -74,6 +74,9 @@ function BurgerMenu() {
     let bellRound = document.querySelector(".bell_round");
     bellRound.classList.toggle("bell_round_burger");
 
+    let headerTopLeftMenu = document.querySelector(".header__top_left_menu");
+    headerTopLeftMenu.classList.toggle("header__top_left_menu_burger")
+
 
 
 

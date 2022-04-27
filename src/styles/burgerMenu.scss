@@ -120,22 +120,36 @@
 
     .footer__burger {
         position: absolute;
-        left: 47px;
+        left: 56px;
         width: 84vw;
     }
 
     .header__top_right_burger {
-        background-color: pink;
+        background-color: #FFBDC8;
     }
 
     .bell_round_burger::after{
       color: #274646;
     }
+    .header__nav_top_title::after{
+        content: url(../images/arrow.svg);
+        position: absolute;
+        left: 72px;
+        transform: rotateZ(90deg);
+    }
+    .header__top_left_menu_burger::after{
+        content: "+7 812 717-19-19";
+        color: #A0A0A0;
+        position: absolute;
+        top: 22px;
+        left: 110px;
+    }
+   
 }
 
 @media (min-width: 576px) and (max-width:767px) {
     .header__top_right_burger {
-        background-color: pink;
+        background-color: #FFBDC8;
     }
 
     .bell_round_burger::after{
@@ -144,4 +158,5 @@
     .header_nav_top_burger {
         padding-left: 22px;
     }
+ 
 }

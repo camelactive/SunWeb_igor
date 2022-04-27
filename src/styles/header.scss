@@ -200,14 +200,14 @@ a {
     gap: 28px;
 }
 
-.header__nav_top a:hover {
+.header__middle_container_item a:hover {
     border-bottom: 3px solid #274646;
     box-sizing: border-box;
-    // line-height: 52px;
     cursor: pointer;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
+    z-index: 5;
+    transition: 0.5s;
 }
-
 .header__nav_bottom {
     display: none;
     justify-content: flex-start;
