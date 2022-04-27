@@ -56,4 +56,3 @@ products.forEach(function productsRender(product) {
      </div>`
 })
     
-

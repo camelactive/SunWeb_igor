@@ -46,10 +46,10 @@
     .header__top_right {
         position: absolute;
         left: 16px;
-        width: 88%;
+        width: 84%;
         height: 50px;
         margin: 0 auto;
-        top: 425.04px;
+        top: 725.04px;
         background: #274646;
         border-radius: 46px;
     }
@@ -57,13 +57,19 @@
         margin-right: 17px;
     }
     .bell_round::after {
-        content: "корзина";
+        content: "Корзина";
         position: absolute;
         left: 50px;
+        font-family: 'Value Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+
     }
     .shopping_bag_and_round {
         position: absolute;
-        left: 19px;
+        right: 100px;
     }
     .header__top_left_hide {
         display: block;
@@ -148,22 +154,27 @@
     }
     .header__top_right {
         position: absolute;
-        left: 50px;
+        left: 25px;
         width: 90%;
         height: 50px;
         margin: 0 auto;
-        top: 862.04px;
+        top: 662.04px;
         background: #274646;
         border-radius: 46px;
     }
     .bell_round::after {
-        content: "корзина";
+        content: "Корзина";
         position: absolute;
         left: 50px;
+        font-family: 'Value Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
     }
     .shopping_bag_and_round {
         position: absolute;
-        left: 19px;
+       right: 200px;
     }
     .header__top_left {
         display: flex;
@@ -174,7 +185,6 @@
         row-gap: 16px;
     }
     .grid_card {
-        /* height: 155px; */
         display: flex;
         flex-direction: row;
     }

@@ -60,8 +60,6 @@ let basketAddButton = document.querySelectorAll('.grid_card_newprice').forEach(i
 
 
 
-
-
 ////////////////////////////////////////////////////////////попытка создания добавления в сторедж
  // _addInLocalStorage() {
     //     let StorageProducts = [];

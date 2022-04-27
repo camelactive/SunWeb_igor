@@ -59,6 +59,7 @@ button {
     display: flex;
     justify-content: space-between;
     width: 226px;
+    z-index: 1;
 }
 
 .shimmingi {
@@ -161,6 +162,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 2px;
+    
 }
 
 .shopping_bag_and_round {
