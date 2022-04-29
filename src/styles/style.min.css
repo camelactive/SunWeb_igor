@@ -1142,7 +1142,7 @@ a {
   font-weight: 500;
   font-size: 24px;
   text-transform: lowercase;
-  cursor: default;
+  cursor: pointer;
 }
 
 .header__nav_top_title_hide {
@@ -1169,6 +1169,7 @@ a {
   right: 0;
   width: 76%;
   top: 0px;
+  transition: 2s;
 }
 
 .header__top_left_hide_green {
@@ -1186,7 +1187,8 @@ a {
   }
 
   .header__middle_container_item_burger {
-    display: none;
+    opacity: 0;
+    transition: 1s;
   }
 
   .header__nav_top_title {
@@ -1204,6 +1206,7 @@ a {
     position: absolute;
     left: 56px;
     width: 84vw;
+    transition: 2s;
   }
 
   .header__top_right_burger {
@@ -1218,6 +1221,11 @@ a {
     content: url(../images/arrow.svg);
     position: absolute;
     left: 72px;
+    transform: rotateZ(90deg);
+  }
+
+  .header__nav_top_title_click::after {
+    content: url(../images/arrow-pink.svg);
     transform: rotateZ(90deg);
   }
 
@@ -1242,6 +1250,24 @@ a {
     padding-left: 22px;
   }
 }
+.footer__burger_menu_click {
+  left: 90%;
+  transition: 2s;
+}
+
+.menu_color {
+  color: #A0A0A0;
+  position: absolute;
+  left: 0;
+}
+
+.header__middle_container_item_click {
+  display: flex;
+  padding-left: 120px;
+  transition: 1s;
+  opacity: 1;
+}
+
 .shopping_bag_and_round {
   position: relative;
 }
