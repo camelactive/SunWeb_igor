@@ -284,11 +284,6 @@ a {
   display: none;
 }
 
-.btn_menu {
-  width: 32px;
-  height: 32px;
-}
-
 .summ::after {
   content: "₽";
 }
@@ -298,7 +293,6 @@ a {
   display: flex;
   gap: 22px;
   overflow: scroll;
-  margin-top: 180px;
 }
 
 .slider::-webkit-scrollbar {
@@ -337,7 +331,6 @@ a {
   overflow: hidden;
   margin-top: 48px;
   height: 100px;
-  line-height: 100px;
   width: 100%;
 }
 
@@ -435,6 +428,10 @@ a {
 
 /* //////////////////////////////////////////Neon////////////////////////////////////////// */
 /* //////////////////////////////////////////Grid////////////////////////////////////////// */
+main {
+  margin-top: 180px;
+}
+
 .menu__header {
   font-family: "Value Sans Pro";
   font-style: normal;
@@ -450,11 +447,9 @@ a {
 .menu__grid {
   display: grid;
   margin-top: 30px;
-  grid-template-columns: repeat(4, 3fr);
 }
 
 .grid_card {
-  display: flex;
   flex-direction: column;
   background: #FFFFFF;
   border-radius: 8px;
@@ -1088,14 +1083,16 @@ a {
   display: none;
 }
 
+.header__top_right_burger {
+  padding-right: 8px;
+}
+
 .header__top_click {
   background-color: #FFFFFF;
 }
 
 .cross_img {
-  display: flex;
   cursor: pointer;
-  margin-left: 8px;
   align-items: center;
 }
 
@@ -1166,8 +1163,8 @@ a {
 
 .footer__burger {
   position: absolute;
-  right: 0;
-  width: 76%;
+  right: -110px;
+  width: 88%;
   top: 0px;
   transition: 2s;
 }
@@ -1188,7 +1185,7 @@ a {
 
   .header__middle_container_item_burger {
     opacity: 0;
-    transition: 1s;
+    transition: 0.1s;
   }
 
   .header__nav_top_title {

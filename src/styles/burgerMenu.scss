@@ -3,15 +3,16 @@
 .burger_menu_hide {
     display: none;
 }
+.header__top_right_burger {
+  padding-right:8px;
+}
 
 .header__top_click {
     background-color: #FFFFFF;
 }
 
 .cross_img {
-    display: flex;
     cursor: pointer;
-    margin-left: 8px;
     align-items: center;
 }
 
@@ -82,8 +83,8 @@
 
 .footer__burger {
     position: absolute;
-    right: 0;
-    width: 76%;
+    right: -110px;
+    width: 88%;
     top: 0px;
     transition: 2s;
 }
@@ -103,10 +104,8 @@
     }
 
     .header__middle_container_item_burger {
-        // display: none;
-        // padding-left: 120px;
         opacity: 0;
-        transition: 1s;
+        transition: 0.1s;
     }
 
     .header__nav_top_title {
