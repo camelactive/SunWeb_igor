@@ -1,9 +1,9 @@
 // let bellRoundCount = document.querySelector(".js-bell_round-count");
 // let shoppingBagSumm = document.querySelector(".js-summ");
 // let gridCardNewPrices = document.querySelectorAll(".grid_card_newprice");
- let shoppingBagAndRound = document.querySelector(".shopping_bag_and_round");
+// let shoppingBagAndRound = document.querySelector(".shopping_bag_and_round");
 // let shoppingBagClickList = document.querySelector(".js-shopping_bag_click");
- let shoppingBagClickHide = document.querySelector(".shopping_bag_click_hide");
+// let shoppingBagClickHide = document.querySelector(".shopping_bag_click_hide");
 // bellRoundCount.textContent = 0;
 // shoppingBagSumm.textContent = "0 ₽";
 // bellRoundCount.textContent = localStorage.getItem("count");
@@ -27,12 +27,13 @@
 
 
 // /////////Клик функция отображения корзины
- shoppingBagAndRound.addEventListener("click", ShoppingBagClick);
+// shoppingBagAndRound.addEventListener("click", ShoppingBagClick);
 
-function ShoppingBagClick() {
-     shoppingBagClickHide.classList.toggle("shopping_bag_click_hide");
+// function ShoppingBagClick() {
+//     shoppingBagClickHide.classList.toggle("shopping_bag_click_hide");
 
-}
+// }
+// shoppingBagClickList.innerHTML = `<button type = button class ="clear_button js-clear-button">clear</button>`
 // /////////Клик функция отображения корзины
 
 
