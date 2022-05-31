@@ -2,7 +2,7 @@ import products from "../products/products.js"
 startBasket();
 startSumm();
 ShopingBagRender();
-let ShopingBagClearButton = document.querySelectorAll(".js-clear-button");
+
 export default basket = {
         quantity: 0,
         summ: 0,
@@ -16,6 +16,7 @@ export default basket = {
                     id: productId,
                     quantity: quantityProduct ? quantityProduct.quantity + 1 : 1,
                 })
+
             } else {
                 existProduct.quantity++;
             }
@@ -26,6 +27,13 @@ export default basket = {
             startSumm();
             ShopingBagRenderClear();
             ShopingBagRender();
+
+            startBasket();
+            startSumm();
+            let ShopingBagClearButton = document.querySelectorAll(".js-clear-button");
+            ShopingBagClearButton.forEach(ClearButton => {
+                ClearButton.addEventListener("click", ProductClear)
+            });
 
         },
         _calculateQuantity() {
@@ -127,24 +135,30 @@ function ShopingBagRender() {
 function ShopingBagRenderClear() {
     shoppingBagClickList.innerHTML = ``;
 }
+let ShopingBagClearButton = document.querySelectorAll(".js-clear-button");
 
 function ProductClear(event) {
-    let clearProduct = "";
-    for (let id = 1; id <= products.length; id++) {
-        clearProduct = JSON.parse(localStorage.getItem(`"products${id}"`));
-        if (clearProduct) {
-            localStorage.removeItem(`"products${event.target.dataset.id}"`)
-            console.log(event.target.dataset.id);
-            ShopingBagRenderClear();
-            ShopingBagRender();
-            // console.log(`"products${id}"`);
 
+    for (let id = 1; id <= products.length; id++) {
+        let clearProduct = JSON.parse(localStorage.getItem(`"products${id}"`));
+        if (clearProduct) {
+            console.log(clearProduct)
+            localStorage.removeItem(`"products${event.target.dataset.id}"`);
+            // let testarr = basket.products;
+            // testarr.splice(`${id}`, 1);
+            basket.products = []
         }
+        startBasket();
+        startSumm();
     }
+    ShopingBagRenderClear();
+    ShopingBagRender();
+    let ShopingBagClearButton = document.querySelectorAll(".js-clear-button");
+    ShopingBagClearButton.forEach(ClearButton => {
+        ClearButton.addEventListener("click", ProductClear)
+    });
 
 }
-
-// let ShopingBagClearButton = document.querySelectorAll(".js-clear-button");
 ShopingBagClearButton.forEach(ClearButton => {
     ClearButton.addEventListener("click", ProductClear)
 });
