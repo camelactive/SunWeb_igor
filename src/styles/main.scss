@@ -1,0 +1,149 @@
+/* //////////////////////////////////////////Grid////////////////////////////////////////// */
+main{
+    margin-top: 180px;
+}
+.menu__header {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.menu {
+    margin-top: 59px;
+}
+
+.menu__grid {
+    display: grid;
+    margin-top: 30px;
+   
+}
+
+.grid_card {
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 8px;
+    position: relative;
+    padding: 16px;
+    min-height: 320px;
+}
+
+.grid_card:hover {
+    outline: 1px solid #F7F7F7;
+}
+
+.grid_card_menu {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 16px;
+    left: 18px;
+    width: 88px;
+    height: 24px;
+}
+
+.grid_card_menu_img {
+    background: #F7F7F7;
+    border-radius: 32px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_card_image {
+    display: flex;
+    height: 200px;
+    // max-width: 274px;
+}
+
+.grid_card_header {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #6B6B6B;
+    justify-self: flex-start;
+    width: 100%;
+    font-family: 'Value Sans Pro';
+}
+
+.grid_card_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_card_weight {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #757575;
+}
+
+.grid_card_price {
+    display: flex;
+    justify-content: end;
+    margin-top: 21px;
+    margin-right: 22px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.grid_card_oldprice {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration-line: line-through;
+    color: #A0A0A0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 8px;
+}
+
+.grid_card_newprice {
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #274646;
+    background: #E9E6E6;
+    border-radius: 46px;
+    width: 90px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.grid_card_newprice:hover {
+    color: #E9E6E6;
+    background: #274646;
+}
+
+.papper:hover {
+    content: url(../images/paper-hover.svg);
+}
+
+.hot:hover {
+    content: url(../images/hot-hover.svg);
+}
+
+.green:hover {
+    content: url(../images/green-hover.svg);
+}
+
+/* //////////////////////////////////////////Grid////////////////////////////////////////// */

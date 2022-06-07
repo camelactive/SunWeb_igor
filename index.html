@@ -6,24 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./src/styles/style.min.css">
 </head>
 
 <body>
     <!-- Header -->
-    <div class="header">
+    <header class="header">
         <div class="header__top">
             <div class="header__top_content container">
                 <div class="header__top_left">
-                        <div class="header__top_left_menu"><img src="./images/menu.png" alt="menu">
-                        <a href="" class="header__top_left_hide"><img src="./images/frame 31.png" alt="hide"></a>
+                    <div class="header__top_left_menu">
+                        <button class="btn_menu">
+                        <img class="menu_img" src="./src/images/menu.png" alt="menu">
+                        <img class="cross_img burger_menu_hide" src="./src/images/cross.svg" alt="cross">
+                        </button>
+                        <a href="/" class="header__top_left_hide"><img src="./src/images/frame31.png" alt="hide"></a>
+                        <a href="/" class="header__top_left_hide header__top_left_hide_green"><img src="./src/images/Frame 31-green.svg" alt="hide"></a>
                     </div>
-                    <a href="#">
-                        <div class="shimishimi"> <img src="./images/shimishimi.png" alt="shimishimi"></div>
+                    <a href="/">
+                        <div class="shimishimi"> <img src="./src/images/shimishimi.png" alt="shimishimi"></div>
+                        <div class="shimishimi_green burger_menu_hide"> <img src="./src/images/shimishimi-green.svg" alt="shimishimi"></div>
                     </a>
-                    <address><a class="tel" href="tel:+7 812 717-19-19">+7 812 717-19-19</a></address>
-                    <a href="#">
+                    <address><a class="tel" href="tel:+78127171919">+7 812 717-19-19</a></address>
+                    <a href="/">
                         <div class="adress_add">Укажите адрес</div>
                     </a>
                 </div>
@@ -31,44 +36,239 @@
                     <a href="#">
                         <div class="shimmingi">Шиминги</div>
                     </a>
-                    <div class="shopping_bag_and_round"><a href="#"> <img class="shopping_bag" src="./images/shopping-bag.png" alt="shopping-bag"></a>
-                        <a href="#">
-                            <div class="bell_round">12</div>
-                        </a>
+                    <div class="shopping_bag_and_round">
+                        <div class="shopping_bag_click_hide shopping_bag_click js-shopping_bag_click"></div>
+                        <button>
+                            <img class="shopping_bag" src="./src/images/shopping-bag.png" alt="shopping-bag">
+                            <img class="shopping_bag_green burger_menu_hide" src="./src/images/shopping-bag_green.svg" alt="shopping-bag">
+                        </button>
+                            <div class="bell_round js-bell_round-count">0</div>
                     </div>
-                    <a href="#">
-                        <div class="summ">2 586 <span class="rubble">₽</span></div>
-                    </a>
+                    
+                        <div class="summ js-summ">0</div>
+                   
                 </div>
             </div>
         </div>
         <div class="header__nav">
-            <div class="header__nav_top container">
+            <div class="header__nav_top container js-header__nav_top_title">
+                <div class="header__nav_top_title header__nav_top_title_hide ">меню</div>
+                <div class="footer footer__burger footer__hide">
+                    <div class="container">
+                        <div class="footer__menu">
+                            <div class="footer__menu_top">
+                                <div class="footer__menu_top_list">
+                                    <a href="#">
+                                        <div class="footer__menu_top_list_item">вход</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="footer__menu_top_list_item">доставка</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="footer__menu_top_list_item">акции</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="footer__menu_top_list_item">отзывы</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="footer__menu_top_list_item">связаться с нами</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="footer__menu_top_list_item">о нас</div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="footer__menu_top_list_item">вакансии</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__line"></div>
+                            <div class="footer__menu_bottom">
+                                <div class="footer__menu_bottom_logo">
+                                    <img class="frame31" src="./src/images/frame31.png" alt="frame31">
+                                    <img class="shimi-hide" src="./src/images/shimishimi.png" alt="shimishimi">
+                                </div>
+                                <div class="footer__menu_bottom_icons">
+                                    <div class="footer__menu_bottom_icon instogram">
+                                        <a href="#"><img src="./src/images/Instagram.svg" alt="instogramm"></a>
+                                    </div>
+                                    <div class="footer__menu_bottom_icon WhatsApp">
+                                        <a href="#"><img src="./src/images/WhatsApp.svg" alt="watsupp"></a>
+                                    </div>
+                                    <div class="footer__menu_bottom_icon Telegram">
+                                        <a href="#"><img src="./src/images/Telegram.svg" alt="telegramm"></a>
+                                    </div>
+                                    <div class="footer__menu_bottom_icon VK">
+                                        <a href="#"><img src="./src/images/VK.svg" alt="vkontakte"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="header__nav_bottom container ">
-                <a href="">классические</a>
-                <a href="">опалённые</a>
-                <a href="">запечённые </a>
-                <a href="">мини</a>
-                <a href="">темпура</a>
+            <div class="header__nav_bottom container">
+                <a href="#">классические</a>
+                <a href="#">опалённые</a>
+                <a href="#">запечённые </a>
+                <a href="#">мини</a>
+                <a href="#">темпура</a>
             </div>
         </div>
-    </div>
-    <div class="slider container">
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image1.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image2.png" alt="slider-image"></div>
-        <div class="slider__item"><img src="./images/slider-image3.png" alt="slider-image"></div>
+    </header>
+  
+    <main>
+        <div class="slider container js-slider">
+            <!-- slider -->
+        </div>
+        <div class="neon pink">
+            <a href="#"></a>
+            <div class="neon__string">
+                <div class="neon__text neon_one">роллы</div>
+                <div class="neon__text neon_two">роллы</div>
+                <div class="neon__text neon_three">роллы</div>
+                <div class="neon__text neon_four">роллы</div>
+                <div class="neon__text neon_five">роллы</div>
+                <div class="neon__text neon_six">роллы</div>
 
-        <!-- /////////////////// JavaScript/////////////////// -->
-<script src="./scripts/js.js"></script>
- <!-- /////////////////// JavaScript/////////////////// -->
+            </div>
+        </div>
+        <section>
+            <div class="menu container">
+                <h2 class="menu__header">классические</h2>
+                <div class="menu__grid js-products_rolls_classic">
+                    <!-- products-rolls-classic -->
+                </div>
+            </div>
+
+            <div class="menu container mobile__hide">
+                <h2 class="menu__header ">опаленные</h2>
+                <div class="menu__grid js-products_rolls_opal">
+                    <!-- products-rolls-opal -->
+                </div>
+            </div>
+        </section>
+        <div class="neon yellow">
+            <div class="neon__string">
+                <div class="neon__text neon_one">суши</div>
+                <div class="neon__text neon_two">суши</div>
+                <div class="neon__text neon_three">суши</div>
+                <div class="neon__text neon_four">суши</div>
+                <div class="neon__text neon_five">суши</div>
+                <div class="neon__text neon_six">суши</div>
+            </div>
+        </div>
+        <section>
+            <div class="menu container">
+                <h2 class="menu__header">классические</h2>
+                <div class="menu__grid js-products_susi_classic">
+                    <!-- products-susi-classic -->
+                </div>
+            </div>
+            <div class="menu container mobile__hide">
+                <h2 class="menu__header ">опаленные</h2>
+                <div class="menu__grid js-products_susi_opal">
+                    <!-- products-susi-opal -->
+                </div>
+            </div>
+        </section>
+        <div class="neon blue">
+            <div class="neon__string">
+                <div class="neon__text neon_one">поке и боулы</div>
+                <div class="neon__text neon_four">поке и боулы</div>
+                <div class="neon__text neon_seven">поке и боулы</div>
+            </div>
+        </div>
+        <section>
+            <div class="menu container">
+                <h2 class="menu__header">классические</h2>
+                <div class="menu__grid js-products_pokeandbule_classic">
+                    <!-- products-pokeandbule-classic -->
+                </div>
+            </div>
+            <div class="menu container mobile__hide">
+                <h2 class="menu__header">опаленные</h2>
+                <div class="menu__grid js-products_pokeandbule_opal">
+                    <!-- products-pokeandbule-opal -->
+                </div>
+            </div>
+        </section>
+        <footer class="footer__bottom">
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__menu">
+                        <div class="footer__menu_top">
+                            <div class="footer__menu_top_list">
+                                <a href="#">
+                                    <div class="footer__menu_top_list_item">вход</div>
+                                </a>
+                                <a href="#">
+                                    <div class="footer__menu_top_list_item">доставка</div>
+                                </a>
+                                <a href="#">
+                                    <div class="footer__menu_top_list_item">акции</div>
+                                </a>
+                                <a href="#">
+                                    <div class="footer__menu_top_list_item">отзывы</div>
+                                </a>
+                                <a href="#">
+                                    <div class="footer__menu_top_list_item">связаться с нами</div>
+                                </a>
+                                <a href="#">
+                                    <div class="footer__menu_top_list_item">о нас</div>
+                                </a>
+                                <a href="#">
+                                    <div class="footer__menu_top_list_item">вакансии</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__line"></div>
+                        <div class="footer__menu_bottom">
+                            <div class="footer__menu_bottom_logo">
+                                <img class="frame31" src="./src/images/frame31.png" alt="frame31">
+                                <img class="shimi-hide" src="./src/images/shimishimi.png" alt="shimishimi">
+                            </div>
+                            <div class="footer__menu_bottom_icons">
+                                <div class="footer__menu_bottom_icon instogram">
+                                    <a href="#"><img src="./src/images/Instagram.svg" alt="instogramm"></a>
+                                </div>
+                                <div class="footer__menu_bottom_icon WhatsApp">
+                                    <a href="#"><img src="./src/images/WhatsApp.svg" alt="watsupp"></a>
+                                </div>
+                                <div class="footer__menu_bottom_icon Telegram">
+                                    <a href="#"><img src="./src/images/Telegram.svg" alt="telegramm"></a>
+                                </div>
+                                <div class="footer__menu_bottom_icon VK">
+                                    <a href="#"><img src="./src/images/VK.svg" alt="vkontakte"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info_left">
+                    <a href="#">
+                        <div class="footer__info_left_item">Шимийо © 2022</div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__info_left_item underline">Политика конфиденциальности</div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__info_left_item underline">Пользовательское соглашение</div>
+                    </a>
+                </div>
+                <div class="footer__info_right">
+                    <div class="footer__info_left_item">Наш<span class="orange">надежный digital</span>-<span class="orange">партнер:</span></div>
+                    <div>
+                        <a href="#"><img src="./src/images/Logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- /////////////////// JavaScript/////////////////// -->
+    <script src="./main.min.js"></script>
+    <!-- /////////////////// JavaScript/////////////////// -->
 </body>
 
-</html>
+</html> -->

@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "rollup": "^2.70.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "sunweb_igor",
+  "version": "1.0.0",
+  "main": "main.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camelactive/SunWeb_igor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camelactive/SunWeb_igor/issues"
+  },
+  "homepage": "https://github.com/camelactive/SunWeb_igor#readme",
+  "description": ""
+}
