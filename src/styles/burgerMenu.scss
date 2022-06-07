@@ -3,8 +3,9 @@
 .burger_menu_hide {
     display: none;
 }
+
 .header__top_right_burger {
-  padding-right:8px;
+    padding-right: 8px;
 }
 
 .header__top_click {
@@ -45,10 +46,11 @@
     padding-left: 51px;
     box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
     width: 100%;
-    align-self: flex-start;
-    margin: 0;
+    // align-self: flex-start;
+    // margin: 0;
     position: absolute;
     top: 55px;
+    // margin-left: 100px;
 }
 
 .header__nav_top_title {
@@ -86,7 +88,7 @@
     right: -110px;
     width: 88%;
     top: 0px;
-    transition: 2s;
+    transition: 0.2s;
 }
 
 .header__top_left_hide_green {
@@ -101,13 +103,13 @@
     .header_nav_top_burger {
         padding-left: 0px;
         width: 47px;
+        margin-left: 0px;
+        align-self: flex-start;
     }
-
     .header__middle_container_item_burger {
         opacity: 0;
         transition: 0.1s;
     }
-
     .header__nav_top_title {
         transform: rotateZ(-90deg);
         font-family: 'Value Sans Pro';
@@ -115,27 +117,21 @@
         font-weight: 500;
         font-size: 24px;
         line-height: 100%;
-
         text-transform: lowercase;
         color: #274646;
-
     }
-
     .footer__burger {
         position: absolute;
         left: 56px;
         width: 84vw;
-        transition: 2s;
+        transition: 0.2s;
     }
-
     .header__top_right_burger {
         background-color: #FFBDC8;
     }
-
     .bell_round_burger::after {
         color: #274646;
     }
-
     .header__nav_top_title::after {
         content: url(../images/arrow.svg);
         position: absolute;
@@ -146,7 +142,6 @@
         content: url(../images/arrow-pink.svg);
         transform: rotateZ(90deg);
     }
-
     .header__top_left_menu_burger::after {
         content: "+7 812 717-19-19";
         color: #A0A0A0;
@@ -154,36 +149,35 @@
         top: 22px;
         left: 110px;
     }
-
 }
 
 @media (min-width: 576px) and (max-width:767px) {
     .header__top_right_burger {
         background-color: #FFBDC8;
     }
-
     .bell_round_burger::after {
         color: #274646;
     }
-
     .header_nav_top_burger {
         padding-left: 22px;
+        // margin-left: 100px;
     }
-
 }
+
 .footer__burger_menu_click {
     left: 90%;
-    transition: 2s;
-  
+    transition: 0.2s;
 }
-.menu_color{
+
+.menu_color {
     color: #A0A0A0;
     position: absolute;
     left: 0;
 }
-.header__middle_container_item_click{
+
+.header__middle_container_item_click {
     display: flex;
     padding-left: 120px;
-    transition: 1s;
+    transition: 0.2s;
     opacity: 1;
 }

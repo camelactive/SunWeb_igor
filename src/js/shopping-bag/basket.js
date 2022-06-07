@@ -4,74 +4,74 @@ startSumm();
 ShopingBagRender();
 
 export default basket = {
-        quantity: 0,
-        summ: 0,
-        products: [],
-        add(productId) {
-            let existProduct = this.products.find(item => item.id == productId);
-            let quantityProduct = JSON.parse(localStorage.getItem(`"products${productId}"`));
+    quantity: 0,
+    summ: 0,
+    products: [],
+    add(productId) {
+        let existProduct = this.products.find(item => item.id == productId);
+        let quantityProduct = JSON.parse(localStorage.getItem(`"products${productId}"`));
 
-            if (!existProduct) {
-                this.products.push({
-                    id: productId,
-                    quantity: quantityProduct ? quantityProduct.quantity + 1 : 1,
-                })
+        if (!existProduct) {
+            this.products.push({
+                id: productId,
+                quantity: quantityProduct ? quantityProduct.quantity + 1 : 1,
+            })
 
-            } else {
-                existProduct.quantity++;
+        } else {
+            existProduct.quantity++;
+        }
+        this._calculateQuantity();
+        // this._calculateSumm();
+        this._addInLocalStorage();
+        startBasket();
+        startSumm();
+        ShopingBagRenderClear();
+        ShopingBagRender();
+
+        startBasket();
+        startSumm();
+        let ShopingBagClearButton = document.querySelectorAll(".js-clear-button");
+        ShopingBagClearButton.forEach(ClearButton => {
+            ClearButton.addEventListener("click", ProductClear)
+        });
+
+    },
+    _calculateQuantity() {
+        this.quantity = 0;
+        this.products.forEach(product => {
+            this.quantity += product.quantity
+        })
+
+
+    },
+    _calculateSumm() {
+
+        totalSumm = 0;
+        summProduct = 0;
+        this.summ = 0;
+        this.products.forEach(product => {
+            let databaseProduct = products.find(item => product.id == item.id);
+            if (databaseProduct) {
+                quantityProduct = JSON.parse(localStorage.getItem(`"products${product.id}"`)) ? JSON.parse(localStorage.getItem(`"products${product.id}"`)).quantity + 1 : 1;
+                summProduct = quantityProduct * parseFloat(databaseProduct.price);
+                this.summ += parseInt(product.quantity) * parseFloat(databaseProduct.price);
+                totalSumm += summProduct;
             }
-            this._calculateQuantity();
-            // this._calculateSumm();
-            this._addInLocalStorage();
-            startBasket();
-            startSumm();
-            ShopingBagRenderClear();
-            ShopingBagRender();
+        })
+        document.querySelector(".js-summ").innerHTML = totalSumm;
 
-            startBasket();
-            startSumm();
-            let ShopingBagClearButton = document.querySelectorAll(".js-clear-button");
-            ShopingBagClearButton.forEach(ClearButton => {
-                ClearButton.addEventListener("click", ProductClear)
-            });
-
-        },
-        _calculateQuantity() {
-            this.quantity = 0;
-            this.products.forEach(product => {
-                    this.quantity += product.quantity
-                })
-                // document.querySelector('.js-bell_round-count').innerHTML = this.quantity;
-
-        },
-        _calculateSumm() {
-
-            totalSumm = 0;
-            summProduct = 0;
-            this.summ = 0;
-            this.products.forEach(product => {
-                let databaseProduct = products.find(item => product.id == item.id);
-                if (databaseProduct) {
-                    quantityProduct = JSON.parse(localStorage.getItem(`"products${product.id}"`)) ? JSON.parse(localStorage.getItem(`"products${product.id}"`)).quantity + 1 : 1;
-                    summProduct = quantityProduct * parseFloat(databaseProduct.price);
-                    this.summ += parseInt(product.quantity) * parseFloat(databaseProduct.price);
-                    totalSumm += summProduct;
-                }
-            })
-            document.querySelector(".js-summ").innerHTML = totalSumm;
-
-        },
+    },
 
 
-        //////////////////////////Добавление в локал сторэдж//////////////////////////
-        _addInLocalStorage() {
-            this.products.forEach(product => {
-                localStorage.setItem(`"products${product.id}"`, JSON.stringify(product));
-            })
-        },
 
-    }
-    //////////////////////////Добавление в локал сторэдж//////////////////////////
+    _addInLocalStorage() {
+        this.products.forEach(product => {
+            localStorage.setItem(`"products${product.id}"`, JSON.stringify(product));
+        })
+    },
+
+}
+
 
 
 let basketAddButton = document.querySelectorAll('.grid_card_newprice').forEach(item => {
@@ -79,7 +79,7 @@ let basketAddButton = document.querySelectorAll('.grid_card_newprice').forEach(i
         basket.add(e.target.getAttribute('product_id'));
     })
 });
-// Общее колличество товаров
+
 function startBasket() {
     let totalQuantity = 0;
     for (let id = 1; id <= products.length; id++) {
@@ -144,8 +144,6 @@ function ProductClear(event) {
         if (clearProduct) {
             console.log(clearProduct)
             localStorage.removeItem(`"products${event.target.dataset.id}"`);
-            // let testarr = basket.products;
-            // testarr.splice(`${id}`, 1);
             basket.products = []
         }
         startBasket();
