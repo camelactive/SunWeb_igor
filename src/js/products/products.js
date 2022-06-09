@@ -1,3 +1,4 @@
+// export {products}; пример експорта
 export default products = [{
     id: 1,
     name: "susi octopus",
