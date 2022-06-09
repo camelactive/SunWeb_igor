@@ -127,9 +127,12 @@ main{
     justify-content: center;
     display: flex;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .grid_card_newprice:hover {
+   
+    transition: all 0.2s ease-in-out;
     color: #E9E6E6;
     background: #274646;
 }

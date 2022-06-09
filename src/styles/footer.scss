@@ -28,12 +28,6 @@
     font-size: 24px;
     color: #F7F7F7;
   }
-  // .footer__menu_top_list_item:hover{
-  //   color: red;
-  //  font-size: 30px;
-  //   transition: 0.5s;
-  // }
-  
   .footer__line {
     margin: 36px auto 30px auto;
     width: 400px;
@@ -124,7 +118,30 @@
     content: url(../images/vk-hover.svg);
     width: 32px;
     height: 32px;
+   
   }
   .footer__menu_bottom_logo .frame31{
     width: 32px;
+  }
+  .footer__menu_top_list_item::after{
+    position: absolute;
+    margin-left: 10px;
+    content: "";
+    opacity: 0;
+    height: 120%;
+    width: 6px;
+    background-color: #FFFFFF;
+    transition: all 0.2s;
+  }
+  .footer__menu_top_list_item{
+    transition: all 0.2s;
+    position: relative;
+  }
+  .footer__menu_top_list_item:hover{
+    color: #FFBDC8;
+    transition: all 0.2s;
+  }
+  .footer__menu_top_list_item:hover::after{
+    opacity: 1;
+    transition: all 0.2s;
   }

@@ -187,6 +187,7 @@ a {
 
 .header__middle_container_item {
     white-space: nowrap;
+   
 }
 
 .grid_card_menu a {
@@ -199,14 +200,13 @@ a {
     display: flex;
     gap: 28px;
 }
-
 .header__middle_container_item a:hover {
     border-bottom: 3px solid #274646;
     box-sizing: border-box;
     cursor: pointer;
     padding-bottom: 15px;
     z-index: 5;
-    transition: 0.5s;
+    transition: all 0.2s;
 }
 .header__nav_bottom {
     display: none;
