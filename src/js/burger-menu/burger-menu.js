@@ -23,6 +23,7 @@ let header = document.querySelector(".header");
 
 
 btnMenu.addEventListener("click", BurgerMenu);
+
 function BurgerMenu() {
     gridSection.forEach(element => {
         element.classList.toggle("burger_menu_hide")
@@ -48,6 +49,7 @@ function BurgerMenu() {
     summ.classList.toggle("summ_green");
 
     headerNavTop.classList.toggle("header_nav_top_burger");
+    // headerNavTop.classList.add("container");
 
     let headerNavTopTitle = document.querySelector(".header__nav_top_title");
 
@@ -91,7 +93,7 @@ function BurgerMenu() {
             headerNavTopTitle.classList.toggle("header__nav_top_title_click");
             headerNavTopTitle.classList.toggle("menu_color")
             let headerNavTopBurger = document.querySelector(".header_nav_top_burger");
-             headerNavTopBurger.style.width = "460px"
+            headerNavTopBurger.style.width = "460px"
             let headerMiddleContainerItemBurger = document.querySelectorAll(".header__middle_container_item_burger");
             headerMiddleContainerItemBurger.forEach(e => e.classList.toggle("header__middle_container_item_click"))
         }

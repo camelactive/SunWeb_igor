@@ -5,6 +5,5 @@ import "./products/products.js"
 import "./products/products-rendering"
 
 import "./slider/slider.js"
-import "./shopping-bag/shopping-bag.js"
-import "./shopping-bag/shopping-bag-countAndSumm.js"
+
 import "./shopping-bag/basket.js"
