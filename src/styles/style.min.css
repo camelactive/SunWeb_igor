@@ -1126,6 +1126,7 @@ main {
   width: 100%;
   position: absolute;
   top: 55px;
+  padding: left 84px;
 }
 
 .header__nav_top_title {
@@ -1160,8 +1161,9 @@ main {
 
 .footer__burger {
   position: absolute;
-  right: -110px;
-  width: 88%;
+  right: 0;
+  width: 86%;
+  height: 100vh;
   top: 0px;
   transition: 0.2s;
 }
@@ -1245,6 +1247,10 @@ main {
   .header_nav_top_burger {
     padding-left: 22px;
   }
+
+  .footer__burger {
+    width: 74%;
+  }
 }
 .footer__burger_menu_click {
   left: 90%;
@@ -1264,6 +1270,16 @@ main {
   opacity: 1;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__burger {
+    width: 78%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer__burger {
+    width: 82%;
+  }
+}
 .shopping_bag_and_round {
   position: relative;
 }

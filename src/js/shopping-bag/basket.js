@@ -89,12 +89,6 @@ function startBasket() {
     document.querySelector('.js-bell_round-count').innerHTML = totalQuantity;
 };
 
-<<<<<<< HEAD
-    }
-    document.querySelector('.js-bell_round-count').innerHTML = totalQuantity;
-}
-
-=======
 function startSumm() {
     totalSumm = 0;
     for (let id = 1; id <= products.length; id++) {
@@ -165,4 +159,4 @@ function ProductClear(event) {
 ShopingBagClearButton.forEach(ClearButton => {
     ClearButton.addEventListener("click", ProductClear)
 });
->>>>>>> 44aebeb46a36e1753de87fa36603f1f6c80e0076
+

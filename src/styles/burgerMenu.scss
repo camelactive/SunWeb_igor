@@ -46,11 +46,9 @@
     padding-left: 51px;
     box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
     width: 100%;
-    // align-self: flex-start;
-    // margin: 0;
     position: absolute;
     top: 55px;
-    // margin-left: 100px;
+    padding: left 84px;
 }
 
 .header__nav_top_title {
@@ -85,8 +83,9 @@
 
 .footer__burger {
     position: absolute;
-    right: -110px;
-    width: 88%;
+    right: 0;
+    width: 86%;
+    height: 100vh;
     top: 0px;
     transition: 0.2s;
 }
@@ -162,6 +161,9 @@
         padding-left: 22px;
         // margin-left: 100px;
     }
+    .footer__burger{
+        width: 74%;
+    }
 }
 
 .footer__burger_menu_click {
@@ -180,4 +182,16 @@
     padding-left: 120px;
     transition: 0.2s;
     opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .footer__burger{
+        width: 78%;
+    }
+}
+
+@media (min-width: 992px)and (max-width: 1200px) {
+    .footer__burger{
+        width: 82%;
+    }
 }
