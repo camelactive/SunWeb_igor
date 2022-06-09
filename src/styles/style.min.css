@@ -1123,7 +1123,7 @@ main {
   padding-top: 64px;
   padding-left: 51px;
   box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.15);
-  width: 100%;
+  width: 1260px;
   position: absolute;
   top: 55px;
   padding: left 84px;
@@ -1246,6 +1246,7 @@ main {
 
   .header_nav_top_burger {
     padding-left: 22px;
+    width: 660px;
   }
 
   .footer__burger {
@@ -1274,10 +1275,23 @@ main {
   .footer__burger {
     width: 78%;
   }
+
+  .header_nav_top_burger {
+    width: 660px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .footer__burger {
     width: 82%;
+  }
+
+  .header_nav_top_burger {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .header_nav_top_burger {
+    width: 1090px;
   }
 }
 .shopping_bag_and_round {
